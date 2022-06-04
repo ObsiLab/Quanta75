@@ -7,14 +7,14 @@ assignees: ''
 
 ---
 
-**Describe the problem**
+**Describe the problem**  
 A description of what the problem/bug is.
 
-**Solution**
+**Solution (if found)**  
 A description of a possible solution.
 
-**Screenshots**
+**Screenshots/Photos**  
 Add screenshots/photos to help explain the problem.
 
-**Additional context and details**
+**Additional context and details**  
 Add any other details about the problem and its context here.
