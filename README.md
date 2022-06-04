@@ -6,3 +6,6 @@ Playing around trying to design a custom keyboard
 
 ## Firmware (_WIP_) :
 [rmk_firmware](https://github.com/ObsiLab/rmk_firmware)  
+
+## License
+Licensed under [CERN-OHL-P v2](LICENSE)
