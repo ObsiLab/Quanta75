@@ -7,8 +7,8 @@ assignees: ''
 
 ---
 
-**Describe a feature you would like to add**
+**Describe a feature you would like to add**  
 A description of what feature could be added to the project.
 
-**Additional context and details**
+**Additional context and details**  
 Add details about the feature request here.
