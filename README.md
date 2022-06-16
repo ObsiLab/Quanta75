@@ -1,4 +1,4 @@
-# Quanta Mechanical Keyboard
+# Quanta Mechanical Keyboard - 75% ISO Layout
 Playing around trying to design a custom keyboard  
 
 ## pcb, design, etc :
