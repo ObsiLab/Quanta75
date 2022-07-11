@@ -26,6 +26,12 @@ logo                     : "/assets/images/Quanta-logo.png" # path of logo image
 masthead_title           : " " # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
+
 # Defaults
 defaults:
   # _posts
