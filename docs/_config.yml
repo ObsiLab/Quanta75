@@ -18,7 +18,7 @@ title_separator          : "-"
 subtitle                 : "Mechanical Keyboard" # site tagline that appears below site title in masthead
 name                     : "0bsilab" # your name
 description              : "Quanta Mechanical Keyboard Documentation"
-url                      : "https://obsilab.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://quanta.obsilab.com/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/Quanta" # the subpath of your site, e.g. "/blog"
 repository               : "ObsiLab/Quanta" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/Quanta-logotext-med_res.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
