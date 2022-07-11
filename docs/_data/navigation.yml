@@ -1,0 +1,39 @@
+# main links
+main:
+  - title: "Home
+    url: /
+  - title: "Quick-Start Guide"
+    url: /docs/quick-start/
+  - title: "Contribute"
+    url: /contributing/
+  - title: "About"
+    url: /about/
+
+# documentation links
+docs:
+  - title: Getting Started
+    children:
+      - title: "Quick-Start Guide"
+        url: /docs/quick-start/
+  - title: Firmware Flashing
+    children:
+      - title: "Firmware"
+        url: /docs/firmware/
+      - title: "Flashing"
+        url: /docs/flashing/
+      - title: "Customizing Firmware"
+        url: /docs/customizing-firmware/
+  - title: Hardware
+    children:
+      - title: "Construction"
+        url: /docs/construction/
+      - title: "PCB"
+        url: /docs/pcb/
+  - title: Other
+    children:
+      - title: "Contributing"
+        url: /contributing/
+      - title: "Authors"
+        url : /authors/
+      - title: "About"
+        url: /about/
