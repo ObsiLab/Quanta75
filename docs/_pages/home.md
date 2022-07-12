@@ -1,7 +1,7 @@
 ---
 layout: splash
-permalink: /index.html
-#hidden: true
+permalink: /
+hidden: true
 header:
   overlay_color: "#30e3ca"
   overlay_image: /assets/images/homepage-image.png
