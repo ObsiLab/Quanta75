@@ -28,7 +28,7 @@ The Quanta keyboard project...
 
 ## How ?
 
-[**0bsilab**](github.com/ObsiLab)  
+[**0bsilab**](github.com/ObsiLab)
 [Lucas Placentino](github.com/LucasPlacentino)
 
 ## Who ?
@@ -37,4 +37,4 @@ The Quanta keyboard project...
 
 ## Project's License
 
-The Quanta project is licensed under [CERN-OHL-P v2](/docs/license).
+The Quanta project is licensed under [CERN-OHL-P v2](/license).

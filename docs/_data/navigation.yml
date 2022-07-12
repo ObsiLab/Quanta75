@@ -37,3 +37,5 @@ docs:
         url : /authors/
       - title: "About"
         url: /about/
+      - title: "License"
+        url : /license/
