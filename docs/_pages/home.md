@@ -1,11 +1,10 @@
 ---
 layout: splash
 permalink: /
-hidden: true #?
-share: false
+#hidden: true
 header:
   overlay_color: "#30e3ca"
-  #overlay_image: /assets/images/mm-home-page-feature.jpg
+  overlay_image: /assets/images/homepage-image.png
   actions:
     - label: "<i class='<i class="fa-solid fa-keyboard"></i>'></i> Get started"
       url: "/docs/quick-start/"
