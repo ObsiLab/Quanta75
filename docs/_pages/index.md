@@ -1,6 +1,6 @@
 ---
 layout: splash
-permalink: index.html
+permalink: /
 hidden: true #?
 header:
   overlay_color: "#30e3ca"
