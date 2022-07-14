@@ -34,17 +34,6 @@ collections:
 
 # Defaults
 defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: false
-      comments: false # true
-      share: true
-      related: false
   # _pages
   - scope:
       path: ""
