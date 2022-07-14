@@ -1,4 +1,4 @@
-<img align="left" height="120" src="https://user-images.githubusercontent.com/23436953/178243321-c31a0a3c-037b-4c5d-b0d7-3faa88524e89.png">
+<img align="left" height="120" src="https://user-images.githubusercontent.com/23436953/179006030-0b7299fd-c3ee-45d5-96cc-7a91a0e0a0a6.png">
 
 # Quanta Mechanical Keyboard - 75% ISO Layout
 Playing around trying to design a custom keyboard  
