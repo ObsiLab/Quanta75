@@ -6,11 +6,11 @@ header:
   overlay_color: "#30e3ca"
   overlay_image: /assets/images/homepage-image.png
   actions:
-    - label: "<i class='<i class="fa-solid fa-keyboard"></i>'></i> Get started"
+    - label: "<i class="fa-solid fa-keyboard"></i> Get started"
       url: "/docs/quick-start/"
 excerpt:
   A DIY 75% ISO mechanical keyboard, with a rotary encoder and vertical USB A port.<br>
-  <small><a href="https://github.com/ObsiLab/Quanta">Github repository</a></small>
+  <small><a href="https://github.com/ObsiLab/Quanta"> <i class="fab fa-fw fa-github"></i> Github repository</a></small>
 feature_row:
   - image_path: /assets/images/keyboard-photo.jpg
     alt: "keyboard photo"
