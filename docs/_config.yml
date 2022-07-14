@@ -36,12 +36,13 @@ collections:
 defaults:
   # _pages
   - scope:
-      path: ""
+      path: "_pages"
       type: pages
     values:
       layout: single
       comments: false
       read_time: false
+      author_profile: false
       share: true
       related: false
   # _docs
