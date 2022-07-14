@@ -122,16 +122,16 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "0bsilab Website"
+    - label: "Obsilab Website"
       icon: "fas fa-fw fa-link"
       url: "https://obsilab.com"
-    - label: "Twitter"
+    - label: "Obsilab Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/ObsiLab"
-    - label: "GitHub"
+    - label: "Obsilab GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ObsiLab"
-    - label: "Instagram"
+    - label: "Obsilab Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/obsi_lab"
 
@@ -140,6 +140,9 @@ footer:
 include:
   - .htaccess
   - _pages
+  - _pages/
+  - /_pages
+  - /_pages/
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
