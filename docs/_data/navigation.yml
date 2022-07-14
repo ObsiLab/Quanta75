@@ -1,41 +1,41 @@
 # main links
 main:
   - title: "Home"
-    url: /
+    url:
   - title: "Quick-Start Guide"
-    url: /docs/quick-start/
+    url: docs/quick-start/
   - title: "Contribute"
-    url: /contributing/
+    url: contributing/
   - title: "About"
-    url: /about/
+    url: about/
 
 # documentation links
 docs:
   - title: Getting Started
     children:
       - title: "Quick-Start Guide"
-        url: /docs/quick-start/
+        url: docs/quick-start/
   - title: Firmware Flashing
     children:
       - title: "Firmware"
-        url: /docs/firmware/
+        url: docs/firmware/
       - title: "Flashing"
-        url: /docs/flashing/
+        url: docs/flashing/
       - title: "Customizing Firmware"
-        url: /docs/customizing-firmware/
+        url: docs/customizing-firmware/
   - title: Hardware
     children:
       - title: "Construction"
-        url: /docs/construction/
+        url: docs/construction/
       - title: "PCB"
-        url: /docs/pcb/
+        url: docs/pcb/
   - title: Other
     children:
       - title: "Contributing"
-        url: /contributing/
+        url: contributing/
       - title: "Authors"
-        url : /authors/
+        url : authors/
       - title: "About"
-        url: /about/
+        url: about/
       - title: "License"
-        url : /license/
+        url : license/
