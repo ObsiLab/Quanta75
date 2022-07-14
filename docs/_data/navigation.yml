@@ -1,7 +1,5 @@
 # main links
 main:
-  - title: "Home"
-    url:
   - title: "Quick-Start Guide"
     url: docs/quick-start/
   - title: "Contribute"
