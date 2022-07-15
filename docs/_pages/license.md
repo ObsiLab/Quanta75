@@ -1,8 +1,9 @@
 ---
 permalink: /license/
-title: "Lciense"
+title: "License"
 excerpt: "Quanta Keyboard Project License."
 share: false
+author_profile: false
 ---
 
 ## This project is licensed under [CERN-OHL-P v2](https://ohwr.org/cern_ohl_p_v2.txt) :

@@ -1,0 +1,17 @@
+# Authors
+
+Lucas Placentino:
+  name        : "Lucas Placentino"
+  bio         : "Belgian engineering student"
+  avatar      : "https://avatars.githubusercontent.com/u/23436953"
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://lucas.placentino.be"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/LucasPlacentino"
+    - label: "Github"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/LucasPlacentino"
+
