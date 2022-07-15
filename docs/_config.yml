@@ -1,140 +1,120 @@
-# ? :
-plugins:
-  - jekyll-remote-theme
-
-# Theme Settings
+# Welcome to Jekyll!
 #
-# Review documentation to determine if you should use `theme` or `remote_theme`
-# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve`. If you change this file, please restart the server process.
 
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
 
-minimal_mistakes_skin    : "mint" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en"
 title                    : "Quanta"
 title_separator          : "-"
-subtitle                 : "Mechanical Keyboard" # site tagline that appears below site title in masthead
-name                     : "0bsilab" # your name
-description              : "Quanta Mechanical Keyboard Documentation"
-url                      : "https://quanta.obsilab.com/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+subtitle                 : "Mechanical Keyboard"
+name                     : &name "0bsilab" # &name is a YAML anchor which can be *referenced later
+description              : &description "75% ISO hotswap mechanical keyboard."
+url                      : https://quanta.obsilab.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "ObsiLab/Quanta" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "assets/images/Quanta-logotext-med_res.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "assets/images/Quanta-logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+repository               : "ObsiLab/Quanta"
+teaser                   : "/assets/images/Quanta-newlogotext_lowres.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : "/assets/images/Quanta-newlogo_lowres.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs            : true # true, false (default)
-
-# Collections
-collections:
-  docs:
-    output: true
-    permalink: :collection/:path/
-
-# Defaults
-defaults:
-  # _pages
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      comments: false
-      read_time: false
-      author_profile: false
-      share: true
-      related: false
-  # _docs
-  - scope:
-      path: ""
-      type: docs
-    values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "docs"
-
 words_per_minute         : 200
+comments:
+  provider               : "false" # false (default), "disqus", "discourse", "facebook", "staticman_v2", "staticman", "utterances", "giscus", "custom"
+  disqus:
+    shortname            :
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+  utterances:
+    theme                : # "github-light" (default), "github-dark"
+    issue_term           : # "pathname" (default)
+  giscus:
+    repo_id              : # Shown during giscus setup at https://giscus.app
+    category_name        : # Full text name of the category
+    category_id          : # Shown during giscus setup at https://giscus.app
+    discussion_term      : # "pathname" (default), "url", "title", "og:title"
+    reactions_enabled    : # '1' for enabled (default), '0' for disabled
+    theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+reCaptcha:
+  siteKey                : # "6LdRBykTAAAAAFB46MnIu6ixuxwu9W1ihFF8G60Q"
+  secret                 : # "PznnZGu3P6eTHRPLORniSq+J61YEf+A9zmColXDM5icqF49gbunH51B8+h+i2IvewpuxtA9TFoK68TuhUp/X3YKmmqhXasegHYabY50fqF9nJh9npWNhvITdkQHeaOqnFXUIwxfiEeUt49Yoa2waRR7a5LdRAP3SVM8hz0KIBT4="
 
-#reCaptcha:
-#  siteKey                :
-#  secret                 :
-atom_feed:
-  path                   : # blank (default) uses feed.xml
-  hide                   : true # true, false (default)
+
 search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
-search_provider          : "lunr" # lunr (default), algolia, google
+search_provider          : lunr # lunr (default), algolia
 lunr:
-  search_within_pages    : true # true, false (default)
+  search_within_pages: true
+
+
 # SEO Related
-#google_site_verification : # ?
+google_site_verification :  # Replace this with your ID, or delete
+bing_site_verification   :
+naver_site_verification  :
+yandex_site_verification :
+baidu_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : "ObsiLab"
-og_image                 : "assets/images/Quanta-logo.png" # Open Graph/Twitter default site image
-# For specifying social profiles
+  username               : &twitter "ObsiLab"
+og_image                 : "/assets/images/Quanta-newlogo.png" # Open Graph/Twitter default site image
+# For specifying social profiles, used in _includes/seo.html
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : "Organization" # Person or Organization (defaults to Person)
   name                   : "0bsilab" # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
     - "https://twitter.com/ObsiLab"
-    - "https://instagram.com/obsi_lab"
     - "https://github.com/ObsiLab"
 
-# Analytics
-analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
-  google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+
+atom_feed:
+  hide: true
 
 
 # Site Author
 author:
-  name             : "0bsilab"
-  avatar           : "assets/images/superformula-edited5.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "0bsilab"
-  location         : "Brussels, Belgium"
-  email            : "mail@obsilab.com"
+  name             : "Lucas Placentino" # *name is a YAML reference pointing to the &anchor earlier
+  avatar           : "https://avatars.githubusercontent.com/u/23436953"
+  bio              : "Belgian engineering student."
+  location         : "Brussels, BE"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:mail@obsilab.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://obsilab.com"
+      url: "https://lucas.placentino.be"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/LucasPlacentino"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/LucasPlacentino"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/lucasplacentino"
+
+
+# Site Footer
+footer:
+  links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/ObsiLab"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/ObsiLab"
+      url: "https://github.com/OsiLab"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/obsi_lab"
-
-# Site Footer
-footer:
-  links:
-    - label: "Obsilab Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://obsilab.com"
-    - label: "Obsilab Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/ObsiLab"
-    - label: "Obsilab GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/ObsiLab"
-    - label: "Obsilab Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/obsi_lab"
+      url: "https://instagram.com/ObsiLab"
 
 
 # Reading Files
@@ -162,12 +142,9 @@ exclude:
   - log
   - node_modules
   - package.json
-  - package-lock.json
   - Rakefile
   - README
   - tmp
-  - /docs # ignore Quanta /docs
-  - /test # ignore Quanta /test
 keep_files:
   - .git
   - .svn
@@ -195,16 +172,57 @@ kramdown:
   enable_coderay: false
 
 
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
+  recipes:
+    output: true
+    permalink: /:collection/:path/
+  pets:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+
+
+# Defaults
+defaults:
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      author_profile: false
+      comments: false
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "docs"
+
+
 # Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
 # Outputting
-permalink: :categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: page:num/
+permalink: /:categories/:title/
+# paginate: 5 # amount of posts to show
+# paginate_path: /page:num/
 timezone: Europe/Brussels # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
@@ -223,6 +241,7 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jemoji
   - jekyll-include-cache
 
 
@@ -238,10 +257,10 @@ whitelist:
 #  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
-  path: categories/
+  path: /categories/
 tag_archive:
   type: liquid
-  path: tags/
+  path: /tags/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
@@ -256,7 +275,7 @@ tag_archive:
 
 
 # HTML Compression
-# - https://jch.penibelst.de/
+# - http://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
