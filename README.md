@@ -1,9 +1,10 @@
-<img align="left" height="120" src="https://user-images.githubusercontent.com/23436953/179006030-0b7299fd-c3ee-45d5-96cc-7a91a0e0a0a6.png">
+<img align="left" height="120" src="https://user-images.githubusercontent.com/23436953/233587902-4c61e8fd-951d-454f-9dfa-1ea4b9c6a239.svg">
 
 # Quanta Mechanical Keyboard - 75% ISO Layout
 Playing around trying to design a custom keyboard  
 
 ## pcb, design, etc :
+See the PCB in [KiCanvas' Browser PCB viewer](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FObsiLab%2FQuanta%2Ftree%2Fmain%2FKiCad%2520Project%2520Quanta)
 #### Project advancement : [Quanta's Github Project](https://github.com/orgs/ObsiLab/projects/2)  
 
 ## Firmware (_WIP_) :
