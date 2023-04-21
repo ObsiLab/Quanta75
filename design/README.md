@@ -7,7 +7,9 @@
 _TODO_
 
 ## Logo
-![Quanta-newlogotext_lowres](https://user-images.githubusercontent.com/23436953/179003837-11989b7a-502d-4a06-a8a9-2ae6c9fd92f3.png)
+<img height="240" src="https://user-images.githubusercontent.com/23436953/233588606-6e17b71a-4519-40dc-8dbc-5bd722d3c803.svg">
+<img height="240" src="https://user-images.githubusercontent.com/23436953/233587902-4c61e8fd-951d-454f-9dfa-1ea4b9c6a239.svg">
+<img height="240" src="https://user-images.githubusercontent.com/23436953/233588563-bfc5a51e-714d-4a77-a1fc-082ede4f8457.svg">
 
 #### Typeface is OpenSans.
 #### Logo is based on a 4f1 (n=4 l=f=3 m=1) Hydrogen wave function/orbital section (see [here](https://en.wikipedia.org/wiki/Quantum_mechanics#/media/File:Hydrogen_Density_Plots.png)).
