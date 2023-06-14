@@ -17920,7 +17920,7 @@
 
   (footprint "Symbol:OSHW-Logo_19x20mm_Copper" (layer "B.Cu")
     (tstamp 9afee797-46cf-40f5-8482-793e0f3cd7d3)
-    (at 134.9375 83.34375 180)
+    (at 279.4 82.55 180)
     (descr "Open Source Hardware Logo")
     (tags "Logo OSHW")
     (attr exclude_from_pos_files exclude_from_bom)
