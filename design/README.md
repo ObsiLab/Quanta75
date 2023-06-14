@@ -18,7 +18,7 @@ _TODO_
 ## Logo license
 Quanta's logo:
 #### _[CC BY-NC-ND 4.0 ](https://creativecommons.org/licenses/by-nc-nd/4.0/)_
-Want to use it (or a modified version) commercially? [Contact me](mailto:mail@obsilab.com).
+Want to use it (on the original or a modified PCB) commercially? [Contact me](mailto:mail@obsilab.com).
 
 #### NOTE: _0bsilab_'s logo is all rights reserved
 > **Without the logos**, you are free to use, make, modify, distribute and sell the PCB however you wish, per the CERN-OHL-P-2.0 License.
