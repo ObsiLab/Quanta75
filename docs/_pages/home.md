@@ -25,7 +25,7 @@ feature_row:
     url: "/docs/firmware/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/pcb.png
+  - image_path: /assets/images/quanta_pcb.png
     alt: "PCB"
     title: "Open Hardware"
     excerpt: "Fully open-source hardware (CERN-OHL-P v2). Access the KiCad Project PCB files."
