@@ -3,6 +3,7 @@ permalink: /license/
 title: "License"
 excerpt: "Quanta Keyboard Project License."
 share: false
+toc: true
 author_profile: false
 ---
 
@@ -208,3 +209,11 @@ to the Product.
       acting as such, and third party beneficiary rights are
       specifically excluded.
 
+
+## Quanta Logo License
+
+Quanta's logo is licensed under _[CC BY-NC-ND 4.0 ](https://creativecommons.org/licenses/by-nc-nd/4.0/)_.  
+Want to use it (on the original or a modified PCB) commercially? [Contact me](mailto:mail@obsilab.com).
+
+#### NOTE: _0bsilab_'s logo is all rights reserved
+> **Without the logos**, you are free to use, make, modify, distribute and sell the PCB however you wish, per the CERN-OHL-P-2.0 License.

@@ -15,5 +15,10 @@ _TODO_
 #### Logo is based on a 4f1 (n=4 l=f=3 m=1) Hydrogen wave function/orbital section (see [here](https://en.wikipedia.org/wiki/Quantum_mechanics#/media/File:Hydrogen_Density_Plots.png)).
 (Use http://wavefunction.danielsvane.dk/ if you want to visualize it in 3D.)  
 
-## Quanta designs/art license
-#### CC-BY-SA 4.0
+## Logo license
+Quanta's logo:
+#### _[CC BY-NC-ND 4.0 ](https://creativecommons.org/licenses/by-nc-nd/4.0/)_
+Want to use it (on the original or a modified PCB) commercially? [Contact me](mailto:mail@obsilab.com).
+
+#### NOTE: _0bsilab_'s logo is all rights reserved
+> **Without the logos**, you are free to use, make, modify, distribute and sell the PCB however you wish, per the CERN-OHL-P-2.0 License.
