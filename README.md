@@ -1,9 +1,9 @@
-<img align="left" height="140" src="https://user-images.githubusercontent.com/23436953/233587902-4c61e8fd-951d-454f-9dfa-1ea4b9c6a239.svg">
+<img align="left" height="120" src="https://github.com/ObsiLab/Quanta75/assets/23436953/53a820a8-7298-4321-85a4-9796e010f5ee">
 
-# Quanta Mechanical Keyboard
-Custom hot-swap 75% ISO keyboard with integrated USB hub including one vertical upward-facing USB A port for Windows Hello fingerprint readers.  
+# Quanta75 Mechanical Keyboard - 75% ISO Layout
+Playing around trying to design a custom keyboard  
 
-### Project advancement : [Quanta's Github Project](https://github.com/orgs/ObsiLab/projects/2)  
+#### Project advancement : [Quanta75's Github Project](https://github.com/orgs/ObsiLab/projects/2)  
 
 ## Documentation
 Documentation about Quanta can be found on [the Quanta website: quanta.obsilab.com](https://quanta.obsilab.com).
