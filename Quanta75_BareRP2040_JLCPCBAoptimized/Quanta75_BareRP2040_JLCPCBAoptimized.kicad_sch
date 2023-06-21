@@ -7,7 +7,7 @@
   (title_block
     (title "Quanta Keyboard Schematic Bare (RP2040 JLCPCBA)")
     (date "2023-06-11")
-    (rev "3.0")
+    (rev "3.1")
     (company "0bsilab")
     (comment 1 "by Lucas Placentino")
     (comment 2 "Version with Bare RP2040 microntroller")
@@ -850,68 +850,6 @@
         (pin passive line (at 0 2.54 270) (length 0.635)
           (name "4" (effects (font (size 1.27 1.27))))
           (number "4" (effects (font (size 0.762 0.762))))
-        )
-      )
-    )
-    (symbol "Device:FerriteBead" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "FB" (at -3.81 0.635 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "FerriteBead" (at 3.81 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at -1.778 0 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "L ferrite bead inductor filter" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Ferrite bead" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Inductor_* L_* *Ferrite*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "FerriteBead_0_1"
-        (polyline
-          (pts
-            (xy 0 -1.27)
-            (xy 0 -1.2192)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 1.27)
-            (xy 0 1.2954)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -2.7686 0.4064)
-            (xy -1.7018 2.2606)
-            (xy 2.7686 -0.3048)
-            (xy 1.6764 -2.159)
-            (xy -2.7686 0.4064)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "FerriteBead_1_1"
-        (pin passive line (at 0 3.81 270) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -3.81 90) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -2477,6 +2415,9 @@
   (junction (at 115.57 86.36) (diameter 0) (color 0 0 0 0)
     (uuid 01e45413-c66a-4b22-9027-d0a43e4708d4)
   )
+  (junction (at 502.92 90.17) (diameter 0) (color 0 0 0 0)
+    (uuid 02272eb2-8795-4d04-baaa-5d67e069692a)
+  )
   (junction (at 181.61 40.64) (diameter 0) (color 0 0 0 0)
     (uuid 02eac4d9-d050-4c59-ab3c-7a76bbf264e0)
   )
@@ -2723,6 +2664,9 @@
   (junction (at 270.51 170.18) (diameter 0) (color 0 0 0 0)
     (uuid 5eeada60-bbcb-4e4a-addc-6cce2eb2e69c)
   )
+  (junction (at 405.13 166.37) (diameter 0) (color 0 0 0 0)
+    (uuid 5f406702-55ec-4c31-91ce-3680470d433d)
+  )
   (junction (at 66.04 109.22) (diameter 0) (color 0 0 0 0)
     (uuid 5f666be8-7ebc-4153-b52b-f3b820217cd4)
   )
@@ -2869,6 +2813,9 @@
   )
   (junction (at 55.88 101.6) (diameter 0) (color 0 0 0 0)
     (uuid 996bd5ce-f1ef-4160-a0a0-6482178860cc)
+  )
+  (junction (at 407.67 90.17) (diameter 0) (color 0 0 0 0)
+    (uuid 9a3c97f0-4da4-4bde-bff9-a64d44f38c10)
   )
   (junction (at 187.96 124.46) (diameter 0) (color 0 0 0 0)
     (uuid 9b2cce31-15cd-4342-834e-0c4800786a65)
@@ -3202,10 +3149,6 @@
     (stroke (width 0) (type default))
     (uuid 04d90c15-0378-4246-95b9-b5a6adcc78ae)
   )
-  (wire (pts (xy 400.05 87.63) (xy 400.05 85.09))
-    (stroke (width 0) (type default))
-    (uuid 0501ce5a-0977-4003-90c7-b300f2c317e6)
-  )
   (wire (pts (xy 237.49 170.18) (xy 237.49 177.8))
     (stroke (width 0) (type default))
     (uuid 053a0262-1de6-43f5-82db-9c1826f5905a)
@@ -3358,10 +3301,6 @@
     (stroke (width 0) (type default))
     (uuid 14043364-602e-4479-b8e7-fa501f9961fa)
   )
-  (wire (pts (xy 402.59 166.37) (xy 402.59 163.83))
-    (stroke (width 0) (type default))
-    (uuid 14715f03-80ea-46da-9a88-373691d0168b)
-  )
   (wire (pts (xy 125.73 241.3) (xy 137.16 241.3))
     (stroke (width 0) (type default))
     (uuid 156f793a-e83f-413a-967f-e8b4722a2565)
@@ -3421,6 +3360,10 @@
   (wire (pts (xy 99.06 40.64) (xy 115.57 40.64))
     (stroke (width 0) (type default))
     (uuid 1befcb4a-aeb1-48b1-8985-98b99ad47b88)
+  )
+  (wire (pts (xy 400.05 85.09) (xy 400.05 90.17))
+    (stroke (width 0) (type default))
+    (uuid 1bf991dd-f382-4b7f-8e50-472eab6de2df)
   )
   (wire (pts (xy 66.04 167.64) (xy 66.04 170.18))
     (stroke (width 0) (type default))
@@ -3549,6 +3492,10 @@
   (wire (pts (xy 115.57 63.5) (xy 132.08 63.5))
     (stroke (width 0) (type default))
     (uuid 2a4b8857-24de-469b-9dfe-16c22b1928f7)
+  )
+  (wire (pts (xy 491.49 284.48) (xy 483.87 284.48))
+    (stroke (width 0) (type default))
+    (uuid 2ad74c44-60f8-4092-a78c-fdcf580955cf)
   )
   (wire (pts (xy 180.34 248.92) (xy 180.34 251.46))
     (stroke (width 0) (type default))
@@ -3802,6 +3749,10 @@
     (stroke (width 0) (type default))
     (uuid 44bb27d4-7944-481c-a0bc-254d13300ead)
   )
+  (wire (pts (xy 405.13 166.37) (xy 402.59 166.37))
+    (stroke (width 0) (type default))
+    (uuid 44fc5eb8-57d7-408b-8663-b0839451b57b)
+  )
   (wire (pts (xy 204.47 101.6) (xy 204.47 124.46))
     (stroke (width 0) (type default))
     (uuid 4510c106-d14a-459c-84da-f2c397dd4055)
@@ -3958,10 +3909,6 @@
     (stroke (width 0) (type default))
     (uuid 511fdcca-29f7-4e03-90b7-d4ee3738ec79)
   )
-  (wire (pts (xy 483.87 280.67) (xy 483.87 284.48))
-    (stroke (width 0) (type default))
-    (uuid 5188eb20-faae-4d35-ac3b-8548a8d6d8b7)
-  )
   (wire (pts (xy 491.49 287.02) (xy 491.49 284.48))
     (stroke (width 0) (type default))
     (uuid 51c07bf5-c82e-468a-8de6-61d2723b2291)
@@ -4073,6 +4020,10 @@
   (wire (pts (xy 115.57 40.64) (xy 115.57 43.18))
     (stroke (width 0) (type default))
     (uuid 5c0948fb-7910-4d74-b359-bc710c4f59bd)
+  )
+  (wire (pts (xy 483.87 284.48) (xy 483.87 280.67))
+    (stroke (width 0) (type default))
+    (uuid 5c3e4260-8d3a-4960-a7b7-f8a4eac464a2)
   )
   (wire (pts (xy 72.39 55.88) (xy 72.39 78.74))
     (stroke (width 0) (type default))
@@ -4205,6 +4156,10 @@
   (wire (pts (xy 424.18 54.61) (xy 422.91 54.61))
     (stroke (width 0) (type default))
     (uuid 68c56af0-d430-4ec3-a0e6-cbe7b34cbe57)
+  )
+  (wire (pts (xy 495.3 90.17) (xy 502.92 90.17))
+    (stroke (width 0) (type default))
+    (uuid 68e9f5bc-8a3f-44d7-a97a-a2e86b33fc30)
   )
   (wire (pts (xy 405.13 262.89) (xy 405.13 260.35))
     (stroke (width 0) (type default))
@@ -4398,10 +4353,6 @@
     (stroke (width 0) (type default))
     (uuid 7c5a3978-5dcf-473c-bf91-d1e770df5e7f)
   )
-  (wire (pts (xy 473.71 289.56) (xy 473.71 284.48))
-    (stroke (width 0) (type default))
-    (uuid 7cac8090-6d6b-4a20-8c09-3d7ecfdb9886)
-  )
   (wire (pts (xy 132.08 76.2) (xy 132.08 78.74))
     (stroke (width 0) (type default))
     (uuid 7ce7cc16-4903-4883-86d9-b741ad1ea1e2)
@@ -4581,10 +4532,6 @@
   (wire (pts (xy 439.42 54.61) (xy 439.42 53.34))
     (stroke (width 0) (type default))
     (uuid 8f7692bd-6e4a-4308-82a5-51e45f37e249)
-  )
-  (wire (pts (xy 495.3 87.63) (xy 495.3 85.09))
-    (stroke (width 0) (type default))
-    (uuid 8f859944-1c54-43e6-9690-e4edf26daac5)
   )
   (wire (pts (xy 430.53 140.97) (xy 430.53 142.24))
     (stroke (width 0) (type default))
@@ -5002,6 +4949,10 @@
     (stroke (width 0) (type default))
     (uuid b9061d90-5171-4766-936f-fede987f5d02)
   )
+  (wire (pts (xy 495.3 85.09) (xy 495.3 90.17))
+    (stroke (width 0) (type default))
+    (uuid b92690a0-f809-4700-8cc2-62df7d37e77e)
+  )
   (wire (pts (xy 527.05 172.72) (xy 527.05 175.26))
     (stroke (width 0) (type default))
     (uuid b951b947-5cbe-43f1-81c1-99168eabf6db)
@@ -5029,6 +4980,10 @@
   (wire (pts (xy 546.1 247.65) (xy 546.1 248.92))
     (stroke (width 0) (type default))
     (uuid bc5efb9c-10e9-45c4-8ff7-62f3c6b7d58b)
+  )
+  (wire (pts (xy 402.59 166.37) (xy 402.59 163.83))
+    (stroke (width 0) (type default))
+    (uuid bc75ef7c-1b5b-40d0-8644-072a3c19eb03)
   )
   (wire (pts (xy 81.28 245.11) (xy 81.28 246.38))
     (stroke (width 0) (type default))
@@ -5258,6 +5213,10 @@
     (stroke (width 0) (type default))
     (uuid d60cedb3-8dbb-4f5f-be7a-d644fd7a5973)
   )
+  (wire (pts (xy 400.05 90.17) (xy 407.67 90.17))
+    (stroke (width 0) (type default))
+    (uuid d6635859-dd62-4acc-8db7-6d3f4e66f6ca)
+  )
   (wire (pts (xy 82.55 63.5) (xy 82.55 66.04))
     (stroke (width 0) (type default))
     (uuid d6f51a61-22db-416f-a89d-0f9406dd1f39)
@@ -5433,10 +5392,6 @@
   (wire (pts (xy 81.28 254) (xy 69.85 254))
     (stroke (width 0) (type default))
     (uuid e4c94cb3-7cf2-4866-b8bb-4ff801f02365)
-  )
-  (wire (pts (xy 473.71 284.48) (xy 474.98 284.48))
-    (stroke (width 0) (type default))
-    (uuid e50de9f5-ceea-42f6-9a3e-180d32dca415)
   )
   (wire (pts (xy 99.06 63.5) (xy 115.57 63.5))
     (stroke (width 0) (type default))
@@ -5649,10 +5604,6 @@
   (wire (pts (xy 99.06 154.94) (xy 99.06 157.48))
     (stroke (width 0) (type default))
     (uuid facaa0e9-0afb-4525-8999-25a842552664)
-  )
-  (wire (pts (xy 483.87 284.48) (xy 482.6 284.48))
-    (stroke (width 0) (type default))
-    (uuid fb25f7ac-7ba4-4107-af8e-870a46591264)
   )
   (wire (pts (xy 440.69 175.26) (xy 444.5 175.26))
     (stroke (width 0) (type default))
@@ -6514,7 +6465,7 @@
     (pin "1" (uuid 5041a339-42e4-4010-b874-db7bd40bf5a5))
     (pin "2" (uuid fb4e4d72-2889-4446-8040-a62c197afb93))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D10") (unit 1)
         )
@@ -6545,7 +6496,7 @@
     (pin "1" (uuid 51758bb6-4b38-49a5-9a2b-ff488cf5b48b))
     (pin "2" (uuid 57d136c5-2ced-4def-aa82-f3355aae13fd))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D8") (unit 1)
         )
@@ -6575,7 +6526,7 @@
     )
     (pin "1" (uuid 9b464184-e891-4aba-a4d8-9ea2fb860a8c))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR015") (unit 1)
         )
@@ -6600,7 +6551,7 @@
     )
     (pin "1" (uuid 69811f23-b0b1-4287-b93c-3ff5de0b05d0))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR022") (unit 1)
         )
@@ -6629,7 +6580,7 @@
     (pin "4" (uuid 54dd1665-d86c-4cd7-b2d1-6ef23b59883d))
     (pin "5" (uuid f679f3d8-c96a-4311-add5-766fa7a5fffe))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "J10") (unit 1)
         )
@@ -6658,7 +6609,7 @@
     (pin "1" (uuid c88e1bf7-0903-4e8e-a803-08c0a03afba6))
     (pin "2" (uuid 17f1daed-272b-4271-9394-402808717320))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "R6") (unit 1)
         )
@@ -6683,7 +6634,7 @@
     )
     (pin "1" (uuid bc2ebd45-b2ed-4923-a3bd-3f43ba8977ae))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "TP13") (unit 1)
         )
@@ -6709,7 +6660,7 @@
     (pin "1" (uuid f49c24f9-e26d-4fe7-bee6-f73fbebc5e12))
     (pin "2" (uuid 8872f7d6-04be-4010-920c-a4dc570aa888))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW43") (unit 1)
         )
@@ -6743,7 +6694,7 @@
     (pin "1" (uuid 99261a11-17b6-4c4b-87da-755390327a9a))
     (pin "2" (uuid bf00e5a5-1522-48f4-a017-2b9aa18fc648))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "C1") (unit 1)
         )
@@ -6769,7 +6720,7 @@
     (pin "1" (uuid c0e25ece-5f63-47ef-be04-0832d2087f82))
     (pin "2" (uuid b9ccb152-2c2a-4956-ae09-5101b77739e4))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW47") (unit 1)
         )
@@ -6826,38 +6777,9 @@
     (pin "8" (uuid 8df1a608-e692-491f-aeb2-fe8d5fcd2004))
     (pin "9" (uuid 3222b6a9-cb2e-498e-8812-84bd4d5b4d25))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "U2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:FerriteBead") (at 402.59 170.18 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 0d141129-d726-4ce2-a07d-3e258e5f966a)
-    (property "Reference" "FB2" (at 398.78 170.18 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "600R" (at 396.24 170.18 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "PCM_Ferrite_SMD_Handsoldering_AKL:Ferrite_0805_2012Metric" (at 404.368 170.18 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 402.59 170.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "JLCPCB part numb" "C1017" (at 402.59 170.18 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 52a98dbf-4db1-42db-a528-f8712c4c4eef))
-    (pin "2" (uuid a7fbc19c-0211-4041-9a19-68baf98bbd7f))
-    (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
-        (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
-          (reference "FB2") (unit 1)
         )
       )
     )
@@ -6881,7 +6803,7 @@
     (pin "1" (uuid 7636ce33-922a-4c3b-9e5a-400ea526c6e3))
     (pin "2" (uuid 7dc78fd1-ab74-417b-9302-ed0cb2ba3e8e))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW72") (unit 1)
         )
@@ -6912,7 +6834,7 @@
     (pin "1" (uuid 8a148475-cfe3-4cd1-84dc-72201ec03970))
     (pin "2" (uuid a84d8eb0-77e2-46e5-8930-1655ad6f114c))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW14") (unit 1)
         )
@@ -6943,7 +6865,7 @@
     (pin "1" (uuid 1c38d99d-85e6-4766-a4c9-034c4129ce7e))
     (pin "2" (uuid ba43dcaf-053a-43a1-afc1-a61a77f4e7a1))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D39") (unit 1)
         )
@@ -6974,7 +6896,7 @@
     (pin "1" (uuid cc90aa0e-f901-4f82-9ec4-09923214b603))
     (pin "2" (uuid 0fd2cd72-0f0d-478a-aa5b-baa7beb72641))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW76") (unit 1)
         )
@@ -7008,7 +6930,7 @@
     (pin "1" (uuid 0aca41a5-082a-449c-8866-44081890954e))
     (pin "2" (uuid 57947251-500a-4ef5-b755-d6a457d6d716))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "C28") (unit 1)
         )
@@ -7033,7 +6955,7 @@
     )
     (pin "1" (uuid ae28b9b4-2de4-4c32-84f6-377518f7aa9a))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR017") (unit 1)
         )
@@ -7059,7 +6981,7 @@
     (pin "1" (uuid 955d3461-aa6d-4ed0-a6f5-40342ce37bcd))
     (pin "2" (uuid 3829e88a-859a-4b02-b894-30d6f8bbb610))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW59") (unit 1)
         )
@@ -7090,7 +7012,7 @@
     (pin "1" (uuid 7ddef482-2a29-4c7f-b374-42137786cc5b))
     (pin "2" (uuid 5ef5857f-4fb3-4733-a664-aa25ca9083d0))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D49") (unit 1)
         )
@@ -7121,7 +7043,7 @@
     (pin "1" (uuid ad4305b1-40dc-45a8-b1bd-235f9796aee8))
     (pin "2" (uuid 0f510921-4bba-4123-80e6-69d630b09d70))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D63") (unit 1)
         )
@@ -7151,7 +7073,7 @@
     )
     (pin "1" (uuid b68ad788-ba59-49fb-9b0f-78b9d679e786))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR047") (unit 1)
         )
@@ -7177,7 +7099,7 @@
     (pin "1" (uuid a3e48355-e26c-400e-b1ca-60d019b5e6a6))
     (pin "2" (uuid 8e556480-5ae5-40f6-a439-7a35f9a22941))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW63") (unit 1)
         )
@@ -7211,7 +7133,7 @@
     (pin "1" (uuid bb19a1cf-3938-4feb-95bc-fa943df61c94))
     (pin "2" (uuid df863196-d24a-4f0a-b3a3-a696f8993d3c))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "R13") (unit 1)
         )
@@ -7240,7 +7162,7 @@
     (pin "1" (uuid ed0f01a6-def6-41f1-bfb2-63790faae545))
     (pin "2" (uuid a7d357cf-ddf5-4b9f-95ed-a72b16382859))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "C5") (unit 1)
         )
@@ -7266,7 +7188,7 @@
     (pin "1" (uuid e3eb45a0-d69e-4c37-82c3-9fc1d7e261b5))
     (pin "2" (uuid 79492a8d-f92c-409c-81f1-9cf6c8765319))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D46") (unit 1)
         )
@@ -7297,7 +7219,7 @@
     (pin "1" (uuid 74eae908-f0ce-46ba-b886-b57853733fbf))
     (pin "2" (uuid 6cadadd7-586b-4058-989c-b2ae839d5759))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW20") (unit 1)
         )
@@ -7328,7 +7250,7 @@
     (pin "1" (uuid cee56ff3-b883-402e-a0ca-a8457ad0e30c))
     (pin "2" (uuid 5b29a639-36a9-49dd-9792-0b5035e711b1))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D65") (unit 1)
         )
@@ -7359,7 +7281,7 @@
     (pin "1" (uuid 1c03a0f6-e417-46f6-a5ab-ab54858f9a39))
     (pin "2" (uuid a16cf2b7-26d6-4f8c-a14e-3362b2a9aadc))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D38") (unit 1)
         )
@@ -7393,7 +7315,7 @@
     (pin "1" (uuid e3d5360a-341d-41f3-b7ae-d0dac925f032))
     (pin "2" (uuid 5f889467-7c44-47f1-857c-27ea30adbf40))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "R3") (unit 1)
         )
@@ -7419,7 +7341,7 @@
     (pin "1" (uuid a4eb94f4-6408-4d18-b212-952c63c7ab8b))
     (pin "2" (uuid 612ef4dd-8b41-4936-a2bb-43e33d514a7b))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D51") (unit 1)
         )
@@ -7454,7 +7376,7 @@
     (pin "5" (uuid f3d9ff5f-1eaa-4654-b8b1-aee9850043ba))
     (pin "6" (uuid e82a5c02-9836-4790-ac26-0a14a5db27a8))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D84") (unit 1)
         )
@@ -7479,7 +7401,7 @@
     )
     (pin "1" (uuid 4062a6f2-7720-4494-826f-3833e3c37e8f))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR011") (unit 1)
         )
@@ -7505,7 +7427,7 @@
     (pin "1" (uuid 20fd2862-3a13-497a-affd-378b5280d78c))
     (pin "2" (uuid ce02db5b-52c5-49c0-b672-ba76c80f4fab))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW41") (unit 1)
         )
@@ -7539,7 +7461,7 @@
     (pin "1" (uuid 21eff9d3-50f0-4f21-b5f7-97b4d12226ab))
     (pin "2" (uuid 40338ae4-3780-493e-81c0-fe1f32bc9b61))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "R9") (unit 1)
         )
@@ -7565,7 +7487,7 @@
     (pin "1" (uuid 72545a0e-55e2-4120-848b-38b41990860e))
     (pin "2" (uuid fdfeb5c0-ac6a-41ab-95fc-0aea14debe89))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW49") (unit 1)
         )
@@ -7596,7 +7518,7 @@
     (pin "1" (uuid 43133391-eaf5-422d-b10a-bd8b337977cd))
     (pin "2" (uuid f552035f-7625-4933-a6c8-3685f19fb899))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D52") (unit 1)
         )
@@ -7626,7 +7548,7 @@
     )
     (pin "1" (uuid 48a1b886-3673-4a73-85fa-577caf712b4d))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR054") (unit 1)
         )
@@ -7651,7 +7573,7 @@
     )
     (pin "1" (uuid 69756b73-1ed8-4136-b509-be6916702128))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR021") (unit 1)
         )
@@ -7676,7 +7598,7 @@
     )
     (pin "1" (uuid 71d67315-6932-421e-9332-aad2f33579d9))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR027") (unit 1)
         )
@@ -7701,7 +7623,7 @@
     )
     (pin "1" (uuid 0c486f94-dfe9-44ad-98cb-ff11f01345b7))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR035") (unit 1)
         )
@@ -7730,7 +7652,7 @@
     (pin "1" (uuid 6cb3cf0b-c2b6-487a-9a36-43b144fae42b))
     (pin "2" (uuid a005e395-7450-43c6-adb2-e11eece93eed))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "C10") (unit 1)
         )
@@ -7813,14 +7735,14 @@
     (pin "53" (uuid f9065a9b-534b-4dbd-bc9d-c00959ac042d))
     (pin "54" (uuid 179a2732-bf29-4717-bc8e-319480eaa7a8))
     (pin "55" (uuid 94605ced-88b9-4322-8f0a-4a109043d796))
-    (pin "56" (uuid 19dcc4a0-a30e-49bf-afd2-7bceee4f4a52))
     (pin "57" (uuid a4df3110-8188-4f0a-a8bd-5b66aa3f4737))
     (pin "6" (uuid 0ff3b8b8-a172-4e49-9010-90502bb41255))
     (pin "7" (uuid 32919d86-4dd7-48c8-9c5f-372278115c1c))
     (pin "8" (uuid 9d376afc-cbdd-4652-8242-332ce5893166))
     (pin "9" (uuid dee731cc-cb6e-49b1-95e1-c4679a5c01ed))
+    (pin "56" (uuid 19dcc4a0-a30e-49bf-afd2-7bceee4f4a52))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "U1") (unit 1)
         )
@@ -7849,34 +7771,9 @@
     (pin "1" (uuid 56407649-4a8e-43be-bb83-d3623c83234e))
     (pin "2" (uuid 641b396d-66e6-44f0-bfd6-9eaa28ac37c1))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "C21") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 495.3 95.25 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 241b0cc3-7df8-4e8c-ab4a-a732fedae362)
-    (property "Reference" "#PWR016" (at 495.3 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 495.3 99.06 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 495.3 95.25 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 495.3 95.25 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b87d6b5b-bea0-4d10-aee4-a6d326cb2877))
-    (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
-        (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
-          (reference "#PWR016") (unit 1)
         )
       )
     )
@@ -7900,7 +7797,7 @@
     (pin "1" (uuid 7647dffa-e192-414c-abb5-c2fe14ac30e2))
     (pin "2" (uuid bedf93ad-54ae-4fc5-8e95-b091992f26f7))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW81") (unit 1)
         )
@@ -7931,7 +7828,7 @@
     (pin "1" (uuid 35b0ab3e-513b-403f-8c56-e16a3a35fd9a))
     (pin "2" (uuid fd825bb5-d924-4fb4-b48b-f8c7481190be))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D42") (unit 1)
         )
@@ -7966,7 +7863,7 @@
     (pin "5" (uuid 88aa3cf7-a7a8-449a-960d-adfca14e2ee7))
     (pin "6" (uuid d0931799-a9f6-47f0-9d75-90410e60599c))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D83") (unit 1)
         )
@@ -7992,7 +7889,7 @@
     (pin "1" (uuid f575b7f8-1c41-4546-b633-484ab6b5ca3e))
     (pin "2" (uuid 5f036a33-714d-4ab7-a4fe-eed9d0d6023f))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW8") (unit 1)
         )
@@ -8023,7 +7920,7 @@
     (pin "1" (uuid 533f9206-f806-4104-880a-578c1debe230))
     (pin "2" (uuid 30e3d7cc-93d0-483a-8ccb-fd9f15a128d2))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW24") (unit 1)
         )
@@ -8054,7 +7951,7 @@
     (pin "1" (uuid 702c63d6-67ef-41e3-b634-28335cb8a7e2))
     (pin "2" (uuid 6e20190d-3a72-4842-ad45-e16aa5f4d8ad))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "J2") (unit 1)
         )
@@ -8080,7 +7977,7 @@
     (pin "1" (uuid 79a26edc-954a-47c0-960e-b1835acf50ba))
     (pin "2" (uuid dc0cab87-bc66-400a-ae00-5c201f158267))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D33") (unit 1)
         )
@@ -8110,34 +8007,9 @@
     )
     (pin "1" (uuid 2c5468a2-43fc-4a66-9136-15ce662c729a))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "TP4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 402.59 173.99 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 2abc3202-abd8-4c5b-843f-35b685b2146d)
-    (property "Reference" "#PWR06" (at 402.59 180.34 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 402.59 177.8 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 402.59 173.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 402.59 173.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 77e6ee83-5952-4dc5-94b5-7b8371e8d6e0))
-    (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
-        (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
-          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -8164,7 +8036,7 @@
     (pin "1" (uuid 6d898dbe-de15-488c-8b0d-b0f394a486a6))
     (pin "2" (uuid efebf888-6e4a-4732-bc0b-00bb9d59b2fa))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "C19") (unit 1)
         )
@@ -8193,7 +8065,7 @@
     (pin "1" (uuid 90c80903-edef-418f-bf58-e6d0872a868d))
     (pin "2" (uuid e74faa54-579e-48be-ae28-6901ea1adb61))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "R4") (unit 1)
         )
@@ -8219,7 +8091,7 @@
     (pin "1" (uuid 6d4fbdf9-2754-4b14-8551-fa0b1f7cdb43))
     (pin "2" (uuid 3bdaa7e3-27c5-456a-b6b8-6291e1d4a7aa))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D74") (unit 1)
         )
@@ -8253,7 +8125,7 @@
     (pin "1" (uuid b96826b1-545e-436c-b687-8607c8c02ea8))
     (pin "2" (uuid 42918ae2-d97f-44c1-954a-4b6055d477de))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "C4") (unit 1)
         )
@@ -8279,7 +8151,7 @@
     (pin "1" (uuid f8e5a395-d223-42f0-8428-b22e6a39d287))
     (pin "2" (uuid 07cecae6-1266-474c-a5ec-46e89d442813))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW71") (unit 1)
         )
@@ -8310,7 +8182,7 @@
     (pin "1" (uuid 00d2659d-2a39-4227-b180-e4976b3f93eb))
     (pin "2" (uuid 1083d8fe-127c-4550-9724-018db33e8152))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D88") (unit 1)
         )
@@ -8336,7 +8208,7 @@
     (pin "1" (uuid a95498c4-0487-4dff-9a2a-8311579e3ca4))
     (pin "2" (uuid b84d312d-6fe8-47ac-adaa-d5ef99723e3c))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D2") (unit 1)
         )
@@ -8367,7 +8239,7 @@
     (pin "1" (uuid e61721dc-b833-49e2-9440-eec7210ede0c))
     (pin "2" (uuid 9f7476da-ba3c-4d1f-a848-7eb4be99b7e8))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D44") (unit 1)
         )
@@ -8398,7 +8270,7 @@
     (pin "1" (uuid 65f57bf8-bb7a-4706-b6b9-426ad63e6134))
     (pin "2" (uuid d41f3b07-c023-4ba7-920d-120dad3f4e5a))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW28") (unit 1)
         )
@@ -8432,7 +8304,7 @@
     (pin "1" (uuid f0e7b3fe-400e-485e-8697-6101ff34079d))
     (pin "2" (uuid bbf3ba1b-3fa0-4ffe-950b-4fad3c036965))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "R5") (unit 1)
         )
@@ -8461,7 +8333,7 @@
     (pin "1" (uuid 7c88fd20-e4f2-4d91-8802-26ae080787ad))
     (pin "2" (uuid 1235566d-9dca-4ade-8aee-1fd912045e6f))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SWBOOTSEL") (unit 1)
         )
@@ -8486,7 +8358,7 @@
     )
     (pin "1" (uuid 24883fb3-9fca-44bb-b7a3-b7d40351222a))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR036") (unit 1)
         )
@@ -8515,7 +8387,7 @@
     (pin "1" (uuid 5a0e8636-223e-4499-a89d-3490f9e6ae2e))
     (pin "2" (uuid 31c709f3-af42-47d5-81ae-48a9133bf57a))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "C25") (unit 1)
         )
@@ -8541,7 +8413,7 @@
     (pin "1" (uuid 69a7c6ef-863d-45bd-9278-68961f505b94))
     (pin "2" (uuid cbcee6dc-f937-4b5d-8af4-9d69d93543c9))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW32") (unit 1)
         )
@@ -8572,7 +8444,7 @@
     (pin "1" (uuid 1ef9f6ab-16c2-4537-a261-a56940d54bee))
     (pin "2" (uuid 55eff935-be5c-49c5-b640-f14df95918d0))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D18") (unit 1)
         )
@@ -8606,7 +8478,7 @@
     (pin "1" (uuid 3dbbb415-40b2-4c75-9bbd-626d75a801dd))
     (pin "2" (uuid e27248f3-2043-4753-85f6-de730787860b))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "C8") (unit 1)
         )
@@ -8635,7 +8507,7 @@
     (pin "1" (uuid 69a336f7-53d6-4af0-b122-027eccf733bc))
     (pin "2" (uuid 320956b7-0ada-4158-9486-8578d1df3d69))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "R12") (unit 1)
         )
@@ -8661,7 +8533,7 @@
     (pin "1" (uuid e451a255-3400-4bff-bf92-3fdc07ffd68e))
     (pin "2" (uuid c05d06b9-a50d-4825-b655-2b1945388f80))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW12") (unit 1)
         )
@@ -8695,7 +8567,7 @@
     (pin "1" (uuid 9e80be08-cc8b-46d9-9e7f-007cb1735e28))
     (pin "2" (uuid 4b4c5658-870f-4125-bf75-588c750e38ea))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "FB7") (unit 1)
         )
@@ -8721,7 +8593,7 @@
     (pin "1" (uuid 9f868b59-6157-4532-ab93-a971014dd8d6))
     (pin "2" (uuid 88de9d97-6dc6-4d0d-bf6c-e04b4d6eb869))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW79") (unit 1)
         )
@@ -8751,7 +8623,7 @@
     )
     (pin "1" (uuid 308e4ef8-ec53-4646-83b0-4e1179051a66))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR04") (unit 1)
         )
@@ -8780,7 +8652,7 @@
     (pin "1" (uuid 9d8d22ea-bbc6-45aa-8746-a343591c8547))
     (pin "2" (uuid 394a2134-8f7b-45a4-a73d-ed8f57592f4c))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "R21") (unit 1)
         )
@@ -8806,7 +8678,7 @@
     (pin "1" (uuid 1ec3fd92-7140-47a2-9393-a2054ac50014))
     (pin "2" (uuid f76b0a91-d7ba-4aea-8819-303df342f2d4))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D13") (unit 1)
         )
@@ -8840,7 +8712,7 @@
     (pin "1" (uuid 7474fd42-fcc9-4e16-92d7-bcf55d001b27))
     (pin "2" (uuid b883bf4b-7312-4756-8f46-3c69cb2ff5a7))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "C16") (unit 1)
         )
@@ -8866,7 +8738,7 @@
     (pin "1" (uuid 1f2019ac-a087-4f37-b221-5725091a1c61))
     (pin "2" (uuid 2033c6bf-8a45-4726-8421-2f0949f4557f))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW21") (unit 1)
         )
@@ -8897,7 +8769,7 @@
     (pin "1" (uuid b033e136-52a3-4f6d-bf90-591330cb684c))
     (pin "2" (uuid b971c6ac-1a5d-4093-a0de-bca4b172ef0a))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW33") (unit 1)
         )
@@ -8927,7 +8799,7 @@
     )
     (pin "1" (uuid 70352523-a397-4981-b3ca-1aa2e27af125))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR020") (unit 1)
         )
@@ -8956,7 +8828,7 @@
     (pin "1" (uuid 6593c34e-7dbe-404e-b5af-f6c98fdd28d4))
     (pin "2" (uuid f2488bb4-7c22-4f84-b9e5-6c1a33fb2a31))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "FB5") (unit 1)
         )
@@ -8981,7 +8853,7 @@
     )
     (pin "1" (uuid cf5d2277-f089-411f-8cff-7d47b4704a75))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR045") (unit 1)
         )
@@ -9007,7 +8879,7 @@
     (pin "1" (uuid 2f3a8c2d-2b20-41d6-9780-e4c4dbcaf052))
     (pin "2" (uuid d3c5d49f-d532-460a-9622-283a5805874b))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW64") (unit 1)
         )
@@ -9037,7 +8909,7 @@
     )
     (pin "1" (uuid 71c70373-2fa7-403d-ae92-f70d95efc9f5))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR026") (unit 1)
         )
@@ -9066,7 +8938,7 @@
     (pin "1" (uuid a6cec8e6-44b6-47df-b6c4-a25e8d433e52))
     (pin "2" (uuid 22bad8b8-9fe1-4384-926e-f011bf43affd))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "R16") (unit 1)
         )
@@ -9091,7 +8963,7 @@
     )
     (pin "1" (uuid 8b5656ed-84e1-4818-a3f5-17cd21d0d903))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR024") (unit 1)
         )
@@ -9120,7 +8992,7 @@
     (pin "1" (uuid 916fca75-42d1-4882-9677-6995997ef1a6))
     (pin "2" (uuid d7357dc3-ab97-4540-aab3-75fcbe18e66e))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "C9") (unit 1)
         )
@@ -9145,7 +9017,7 @@
     )
     (pin "1" (uuid 3b12560a-def3-41d5-85ef-571d97180904))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR032") (unit 1)
         )
@@ -9171,7 +9043,7 @@
     (pin "1" (uuid 9194c78f-b60f-4071-87e5-5c6064f5e372))
     (pin "2" (uuid 9e75a220-38b9-4ece-a37e-809ba61e856f))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW60") (unit 1)
         )
@@ -9205,7 +9077,7 @@
     (pin "1" (uuid a0182893-76ac-4e62-b50e-56bec4c4604f))
     (pin "2" (uuid fdd73c6d-d0f7-4905-9c35-6d588a1a7062))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "C15") (unit 1)
         )
@@ -9230,7 +9102,7 @@
     )
     (pin "1" (uuid ea28f55b-d821-40ad-ad18-c746cb84c7bc))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "TP3") (unit 1)
         )
@@ -9256,7 +9128,7 @@
     (pin "1" (uuid 6ad398cb-0476-4d76-9c33-288024e15407))
     (pin "2" (uuid 250ae0ee-46b2-45ee-9a07-83fb79f4f132))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW78") (unit 1)
         )
@@ -9286,7 +9158,7 @@
     )
     (pin "1" (uuid c5c60df4-931a-4bb3-a399-f8cbc0224be2))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR039") (unit 1)
         )
@@ -9311,7 +9183,7 @@
     )
     (pin "1" (uuid 105c85c8-db41-4875-8ab7-aecf89b6393c))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR037") (unit 1)
         )
@@ -9342,7 +9214,7 @@
     (pin "3" (uuid d6c80506-6e55-4522-8f2a-96de2c9d57fe))
     (pin "4" (uuid 27aeb195-6e92-4c54-aff1-7875e84e1b5b))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "Y1") (unit 1)
         )
@@ -9367,7 +9239,7 @@
     )
     (pin "1" (uuid 048a135c-50d5-40ad-a069-f815658c7035))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR056") (unit 1)
         )
@@ -9393,7 +9265,7 @@
     (pin "1" (uuid 73040155-e54a-45ca-b0a0-bd841d9935ca))
     (pin "2" (uuid 34be22ef-efc4-4bfe-adae-65c575ed1f40))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D50") (unit 1)
         )
@@ -9424,7 +9296,7 @@
     (pin "1" (uuid 53c9e82f-6fc4-4a3b-a720-beb554069028))
     (pin "2" (uuid 5c4a6491-c65d-41ce-82dd-02f27d28cc5d))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW16") (unit 1)
         )
@@ -9455,7 +9327,7 @@
     (pin "1" (uuid b59358bf-0092-48b7-87cb-15e581c20505))
     (pin "2" (uuid d3494eef-fc4e-4006-a94b-c015efd2622e))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D48") (unit 1)
         )
@@ -9486,7 +9358,7 @@
     (pin "1" (uuid 0d11d645-c6fe-4ff4-bd4c-ad2686bee57f))
     (pin "2" (uuid 0e8393ca-b20a-4a57-a3cd-f7c2324c6994))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D73") (unit 1)
         )
@@ -9516,7 +9388,7 @@
     )
     (pin "1" (uuid 83b67cec-7161-4d98-b22f-03f3088f8f9f))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR025") (unit 1)
         )
@@ -9542,7 +9414,7 @@
     (pin "1" (uuid f513bad6-1d5d-49ef-9321-12c5ec050545))
     (pin "2" (uuid 57d2eb70-db11-40ca-bb52-50aa3b86c4b7))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW75") (unit 1)
         )
@@ -9576,7 +9448,7 @@
     (pin "1" (uuid c8291144-3abb-400a-9151-5d0c37d8adae))
     (pin "2" (uuid 7eb86d0f-e8fa-4575-a64f-4e1b02ccee67))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "FB4") (unit 1)
         )
@@ -9601,7 +9473,7 @@
     )
     (pin "1" (uuid 36fd3c10-3466-4d94-ab12-e64df3545d69))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR014") (unit 1)
         )
@@ -9630,7 +9502,7 @@
     (pin "1" (uuid 745b051b-c3a2-4764-b441-0d25c55c3744))
     (pin "2" (uuid 634443e9-c821-48da-aae7-f784c60ee208))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "C14") (unit 1)
         )
@@ -9656,7 +9528,7 @@
     (pin "1" (uuid 740cd30d-1077-4be8-8457-b9500a0b8a55))
     (pin "2" (uuid 906dc093-54c1-454a-a3bd-e1289d533e9c))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW23") (unit 1)
         )
@@ -9687,7 +9559,7 @@
     (pin "1" (uuid 73cac8a7-745b-48de-9fdc-5f77231e6f7e))
     (pin "2" (uuid 41d01fec-3c9f-4b94-ac6b-258c9dbbf204))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D68") (unit 1)
         )
@@ -9718,7 +9590,7 @@
     (pin "1" (uuid 286da3d6-e7ba-42e4-9fa8-e3c0ea33592a))
     (pin "2" (uuid a0d397a3-4e03-4592-95a9-f0ca103c1f34))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D71") (unit 1)
         )
@@ -9749,7 +9621,7 @@
     (pin "1" (uuid e14b9f7a-4a1b-4470-a3ad-8e7725d49f2c))
     (pin "2" (uuid 2aed57f4-b072-46ee-8a1a-18d21e392525))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D20") (unit 1)
         )
@@ -9779,7 +9651,7 @@
     )
     (pin "1" (uuid 4a5375f3-575b-44fc-848b-8c06963d68bc))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR043") (unit 1)
         )
@@ -9823,7 +9695,7 @@
     (pin "B9" (uuid 57f22b3e-6f1a-4098-8865-8651249fd6d6))
     (pin "S1" (uuid 2dbe2806-034a-499e-998e-1ddeeacd8ede))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "J1") (unit 1)
         )
@@ -9852,7 +9724,7 @@
     (pin "S1" (uuid caf2901b-e843-4360-89c4-e6c050df896d))
     (pin "S2" (uuid 771356ad-76d2-4a44-8273-0baaaef492bb))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "RESW1") (unit 1)
         )
@@ -9882,7 +9754,7 @@
     )
     (pin "1" (uuid 3d868d1c-0b88-4f77-8276-ffb5c3d34e47))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR07") (unit 1)
         )
@@ -9908,7 +9780,7 @@
     (pin "1" (uuid 8f822e99-a446-45c0-a0af-9295edf28c21))
     (pin "2" (uuid 6592410d-8ad5-4dee-8b1f-f67543566f92))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW61") (unit 1)
         )
@@ -9939,7 +9811,7 @@
     (pin "1" (uuid 6c862a2e-2f02-4042-8321-c1e3eacc33e2))
     (pin "2" (uuid faa7dd76-e185-49fb-b7fb-a5476875cfed))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D32") (unit 1)
         )
@@ -9973,38 +9845,9 @@
     (pin "1" (uuid f02ecd07-f279-4364-908a-ddcf2d617a6e))
     (pin "2" (uuid ae78de9d-1042-4bf6-a2e3-4cfba6504f49))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "R18") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:FerriteBead") (at 478.79 284.48 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 5f96c02a-6317-426b-85bb-0920e47edf29)
-    (property "Reference" "FB1" (at 478.79 280.67 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "600R" (at 478.79 289.56 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "PCM_Ferrite_SMD_Handsoldering_AKL:Ferrite_0805_2012Metric" (at 478.79 286.258 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 478.79 284.48 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "JLCPBC part number" "C1017" (at 478.79 284.48 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d0140f1d-fa07-450c-846c-aefbbac5b58f))
-    (pin "2" (uuid fd2d9e78-cf02-4c69-a03e-b07501915d8e))
-    (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
-        (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
-          (reference "FB1") (unit 1)
         )
       )
     )
@@ -10028,7 +9871,7 @@
     (pin "1" (uuid aef4559a-b08f-4582-bfda-c3b1579b8587))
     (pin "2" (uuid 44182a88-a92f-4a40-9ab6-fc7ef63f5948))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW26") (unit 1)
         )
@@ -10062,7 +9905,7 @@
     (pin "1" (uuid 93ac3d9e-7a12-48d3-8adc-8cb100b9855c))
     (pin "2" (uuid 9e2d6fbc-2c9f-48d5-8fd0-89c4afc3c1bc))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "R2") (unit 1)
         )
@@ -10087,7 +9930,7 @@
     )
     (pin "1" (uuid d9c98776-46b1-4e60-8ce5-4a2e332e5e42))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "TP12") (unit 1)
         )
@@ -10112,7 +9955,7 @@
     )
     (pin "1" (uuid 4741ec29-0243-4670-bbaf-d4d254077b28))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR028") (unit 1)
         )
@@ -10137,7 +9980,7 @@
     )
     (pin "1" (uuid 20c4fbb4-c117-4848-8590-e9009ebede5f))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR048") (unit 1)
         )
@@ -10166,7 +10009,7 @@
     (pin "1" (uuid 71424fd5-6da2-434d-b185-13a3df9e76a1))
     (pin "2" (uuid 7ff2466d-9697-4725-b4b1-634b1a96cd0d))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "C7") (unit 1)
         )
@@ -10192,7 +10035,7 @@
     (pin "1" (uuid 2a5c7e14-a0b3-4a7a-aa41-93187907b098))
     (pin "2" (uuid ed768461-42bf-4ee6-8108-08a1529552fc))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW45") (unit 1)
         )
@@ -10223,7 +10066,7 @@
     (pin "1" (uuid a626cee8-122e-4220-b4d3-3cfa1c559ee9))
     (pin "2" (uuid 7ac76b80-1378-46e3-8bf0-b6edefb59b65))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D25") (unit 1)
         )
@@ -10254,7 +10097,7 @@
     (pin "1" (uuid bda03e72-19b7-4ac3-b9d5-625bf8c21695))
     (pin "2" (uuid dcb19fce-c079-4460-9cea-424b60e30693))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D58") (unit 1)
         )
@@ -10284,7 +10127,7 @@
     )
     (pin "1" (uuid e726c7db-ef21-4abb-bd0a-bb2383299f2f))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR012") (unit 1)
         )
@@ -10313,7 +10156,7 @@
     (pin "1" (uuid f75c341a-7ea8-4ca4-95c2-7905d5369fc3))
     (pin "2" (uuid eedefb27-24a0-4f9d-aeed-8020a14dedcf))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "R1") (unit 1)
         )
@@ -10339,7 +10182,7 @@
     (pin "1" (uuid 27079858-dc74-44e7-bec7-c5180acabee8))
     (pin "2" (uuid 57328286-aaac-4c23-a728-a9da825e1a03))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D80") (unit 1)
         )
@@ -10370,7 +10213,7 @@
     (pin "1" (uuid deb74f82-c9c6-4b50-b490-8200c1eaf85c))
     (pin "2" (uuid 20472950-7175-4443-83a9-839009d0bb98))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D29") (unit 1)
         )
@@ -10401,7 +10244,7 @@
     (pin "1" (uuid eec3373e-69cf-4627-b197-61d8df9b1ba1))
     (pin "2" (uuid d472d56d-d21e-4d1a-9ca0-6cc93a27522e))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW15") (unit 1)
         )
@@ -10432,7 +10275,7 @@
     (pin "1" (uuid 9627c537-841a-477f-a786-deb84ca8ea13))
     (pin "2" (uuid 011c7c16-826b-4a3d-a254-538a4b9e1ca5))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW82") (unit 1)
         )
@@ -10467,7 +10310,7 @@
     (pin "5" (uuid a4f6de46-c87b-404e-86fb-4e209da3184d))
     (pin "6" (uuid dad5be66-2676-42e2-827b-0d8daecfba05))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D85") (unit 1)
         )
@@ -10495,7 +10338,7 @@
     (pin "3" (uuid b477828b-2d30-469d-bea9-5316f9d6aaa2))
     (pin "4" (uuid 3eb99c24-bc8b-466c-b18f-26905618f64e))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "J8") (unit 1)
         )
@@ -10521,7 +10364,7 @@
     (pin "1" (uuid d0031221-c8e0-4b77-a297-b5cf4b139631))
     (pin "2" (uuid 9f607ce4-c0f5-48aa-a4af-4055d320ca94))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW25") (unit 1)
         )
@@ -10552,7 +10395,7 @@
     (pin "1" (uuid 8eeaf7a0-48cd-4389-a679-afa6d585917f))
     (pin "2" (uuid bdd94db4-dcdb-44ad-b88d-e7152693f389))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW51") (unit 1)
         )
@@ -10583,7 +10426,7 @@
     (pin "1" (uuid e5fd7e1e-f142-4a45-88b6-ce9a46fb6f51))
     (pin "2" (uuid bb382704-ffc1-404c-afb3-329b3f138f48))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D56") (unit 1)
         )
@@ -10614,7 +10457,7 @@
     (pin "1" (uuid eb4eed8d-421b-439c-974c-63536647c081))
     (pin "2" (uuid 59dbcda6-9522-4f54-9a47-87bccf683e52))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D64") (unit 1)
         )
@@ -10644,7 +10487,7 @@
     )
     (pin "1" (uuid 9974fc11-6822-4e36-b642-37768f970985))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR041") (unit 1)
         )
@@ -10673,7 +10516,7 @@
     (pin "1" (uuid 36c5a8f2-355b-42f1-af24-60b279598af7))
     (pin "2" (uuid 9efa8a60-dbd2-4339-bee8-555635bcc5c1))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "FB6") (unit 1)
         )
@@ -10699,7 +10542,7 @@
     (pin "1" (uuid 9df0ecd3-3dd6-4cc5-99f3-2d0ee709386f))
     (pin "2" (uuid 0f16353a-5851-49d9-8c89-02b85054e104))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW80") (unit 1)
         )
@@ -10729,34 +10572,9 @@
     )
     (pin "1" (uuid e7257368-21ed-4202-aa1b-a52ab5787752))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR040") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 473.71 289.56 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 738fc397-57f6-4be0-9429-d06266efd023)
-    (property "Reference" "#PWR03" (at 473.71 295.91 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 473.71 293.37 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 473.71 289.56 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 473.71 289.56 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c948c7a0-3032-4083-a87d-0cc34e90e0d3))
-    (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
-        (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
-          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -10780,7 +10598,7 @@
     (pin "1" (uuid 188deb2e-d599-41f4-bb62-7d0bcbebec51))
     (pin "2" (uuid b7bf89cf-530e-436d-8ceb-00dbacb1950f))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW50") (unit 1)
         )
@@ -10811,7 +10629,7 @@
     (pin "1" (uuid 998d34a4-9b9f-4954-bd7a-6f87d5126304))
     (pin "2" (uuid bfba0e25-f360-4d56-9bce-f387bc55d4a3))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D26") (unit 1)
         )
@@ -10842,7 +10660,7 @@
     (pin "1" (uuid d8761834-afc3-4973-8a8e-a9359573379b))
     (pin "2" (uuid c7fd8a0c-8d30-4ea5-b049-e9ee6b819564))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW56") (unit 1)
         )
@@ -10873,7 +10691,7 @@
     (pin "1" (uuid e4963330-5a34-4ae0-86a2-c2009f2140e1))
     (pin "2" (uuid 44affa5c-3b0d-43ff-8b78-d3bebc3aba76))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D61") (unit 1)
         )
@@ -10907,7 +10725,7 @@
     (pin "1" (uuid 24196a30-71dc-4322-8bce-4663e02f164c))
     (pin "2" (uuid 0a863352-d74f-42cc-9887-4727da79f377))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "C26") (unit 1)
         )
@@ -10936,7 +10754,7 @@
     (pin "1" (uuid 26b38c8f-a0fa-4629-8e68-401ce6914df5))
     (pin "2" (uuid aa709191-d34f-4c2d-9f41-02b0390a1529))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "C17") (unit 1)
         )
@@ -10961,7 +10779,7 @@
     )
     (pin "1" (uuid 03d61a7a-8252-4d50-898b-06cb1cb4fe2a))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "TP1") (unit 1)
         )
@@ -10996,7 +10814,7 @@
     (pin "7" (uuid 13c0c959-2d10-45e6-bfb1-e42e6690e062))
     (pin "8" (uuid 710612eb-ff57-4048-a7eb-2af9bd60a0c3))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "U4") (unit 1)
         )
@@ -11021,7 +10839,7 @@
     )
     (pin "1" (uuid a2b25577-6a31-4d68-8827-41c14758e9da))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR042") (unit 1)
         )
@@ -11047,7 +10865,7 @@
     (pin "1" (uuid 93317f2e-8f6e-4ed2-9774-b454111785e8))
     (pin "2" (uuid 6e500e5d-d2d9-4fa9-aaf1-abe514589026))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D77") (unit 1)
         )
@@ -11078,7 +10896,7 @@
     (pin "1" (uuid 2941f8e9-a6e8-49ba-a1f0-b9bffb948cd7))
     (pin "2" (uuid 71769857-b8ac-427d-a2e5-1e9257f039b6))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D27") (unit 1)
         )
@@ -11108,7 +10926,7 @@
     )
     (pin "1" (uuid 047ee9d0-e863-48e2-8d71-67b26154aea9))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR08") (unit 1)
         )
@@ -11134,7 +10952,7 @@
     (pin "1" (uuid 6912d108-5efc-41f4-bb2a-d1c8ba6bdca0))
     (pin "2" (uuid edb68e5c-78b3-4919-99ff-2f043335acd0))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW31") (unit 1)
         )
@@ -11164,7 +10982,7 @@
     )
     (pin "1" (uuid 99259b28-e037-4e7e-9b07-dac44e30e1c4))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR049") (unit 1)
         )
@@ -11193,7 +11011,7 @@
     (pin "1" (uuid 9a356493-e6d3-4ade-957e-1d113102794c))
     (pin "2" (uuid eae3a5d9-f89c-4351-9d3f-2e78aa8e8aff))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "C18") (unit 1)
         )
@@ -11219,7 +11037,7 @@
     (pin "1" (uuid b0900e32-96c0-4079-9b30-e8703db6cbb0))
     (pin "2" (uuid 19c85282-28fd-4d2f-b503-08d90b3dcda8))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D9") (unit 1)
         )
@@ -11250,7 +11068,7 @@
     (pin "1" (uuid b7c84c84-787c-4193-91f4-e4f52b7cdbff))
     (pin "2" (uuid d1c7705b-b54b-49cb-a71d-2f0dff4d7498))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D59") (unit 1)
         )
@@ -11281,7 +11099,7 @@
     (pin "1" (uuid 87db1215-e5da-4fa7-924d-c7e8a19472cf))
     (pin "2" (uuid 2d132cd4-1b05-4c6c-aa57-608428b14eb6))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW42") (unit 1)
         )
@@ -11312,7 +11130,7 @@
     (pin "1" (uuid 1c36c82d-3264-426a-addf-d6628f3b214e))
     (pin "2" (uuid 6d32bdf5-53c5-441b-b7b7-f1a71d21e254))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW70") (unit 1)
         )
@@ -11342,7 +11160,7 @@
     )
     (pin "1" (uuid 1b5b7d4e-de7b-4896-992e-183f9fab020d))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR057") (unit 1)
         )
@@ -11368,7 +11186,7 @@
     (pin "1" (uuid 18dfbfd0-a337-4743-ad99-fe5cee8e4c6c))
     (pin "2" (uuid 71e53c5b-0cfa-466f-9650-45c15c50a09a))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW30") (unit 1)
         )
@@ -11399,7 +11217,7 @@
     (pin "1" (uuid e1f0f606-73eb-48f3-8ba7-cae8df94be7d))
     (pin "2" (uuid 280cc5f6-8b4f-468e-be81-882febd45880))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D81") (unit 1)
         )
@@ -11430,7 +11248,7 @@
     (pin "1" (uuid 98b0e4f9-e39f-4830-b621-9031d3a39582))
     (pin "2" (uuid f11d5bf5-95a2-44ef-ad34-033306ec7c85))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW66") (unit 1)
         )
@@ -11461,7 +11279,7 @@
     (pin "1" (uuid 7806fd2f-55d8-42a7-9e8a-ede5c063899c))
     (pin "2" (uuid bd64aacb-6e55-4220-bf48-16863afeec94))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW1") (unit 1)
         )
@@ -11491,7 +11309,7 @@
     )
     (pin "1" (uuid b68403ec-c207-4e56-8397-95d6e2ad1414))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR044") (unit 1)
         )
@@ -11517,7 +11335,7 @@
     (pin "1" (uuid 6de903b2-268d-4f3c-aa8a-b52fb989bcb2))
     (pin "2" (uuid ae7f00b0-ce6e-4079-bb6a-dd162a201b08))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW17") (unit 1)
         )
@@ -11548,7 +11366,7 @@
     (pin "1" (uuid 93218bc3-3cbc-41b9-a9a6-5fcfeaf1b311))
     (pin "2" (uuid 92ed1b5e-7280-4342-b305-7c1793cce306))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D87") (unit 1)
         )
@@ -11574,7 +11392,7 @@
     (pin "1" (uuid 3482b384-5868-429d-b1d5-d5f88c63527d))
     (pin "2" (uuid 00e5c4f2-0e67-417d-83b7-8765652c860f))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW13") (unit 1)
         )
@@ -11605,7 +11423,7 @@
     (pin "1" (uuid 4e9437c9-b916-4b2a-912c-d2d521351895))
     (pin "2" (uuid 16a12b13-6652-4428-b443-9ff2a9cb4666))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D41") (unit 1)
         )
@@ -11636,7 +11454,7 @@
     (pin "1" (uuid df6c8cd1-9989-49d0-906e-0ba6f66287f1))
     (pin "2" (uuid f0e23779-5e09-4815-b272-83988e06204f))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "J3") (unit 1)
         )
@@ -11665,7 +11483,7 @@
     (pin "1" (uuid de954181-991f-40d3-85ca-9523ff79fc23))
     (pin "2" (uuid 677e1d96-0da0-4ebc-803f-a95916147048))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "FB9") (unit 1)
         )
@@ -11691,7 +11509,7 @@
     (pin "1" (uuid ad40eff8-7394-4489-bbc7-be56992f90ed))
     (pin "2" (uuid bebb463b-ea6c-40c0-8546-b28d57ae9146))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D23") (unit 1)
         )
@@ -11725,7 +11543,7 @@
     (pin "1" (uuid 73ba1dd7-ec43-473a-97b4-ce6ff7e4eded))
     (pin "2" (uuid a583d546-dcf2-4936-94d7-06fe66de6137))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "R10") (unit 1)
         )
@@ -11751,7 +11569,7 @@
     (pin "1" (uuid 322d12c6-ce9a-481e-b995-4ad20d0dfb5a))
     (pin "2" (uuid 2fae2971-14b7-4493-a4c8-9df78a9fdefc))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D11") (unit 1)
         )
@@ -11781,7 +11599,7 @@
     )
     (pin "1" (uuid 608b8d87-e371-47d7-b16d-acf9006e252b))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR010") (unit 1)
         )
@@ -11807,7 +11625,7 @@
     (pin "1" (uuid efd4661d-b5f0-4a0c-a814-3a1963a3ca9a))
     (pin "2" (uuid 8b2c3e2a-d999-4fe9-a0a3-cc673386565e))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D15") (unit 1)
         )
@@ -11838,7 +11656,7 @@
     (pin "1" (uuid 673f3037-e4c4-4bc8-a65a-dc4c2b08e3d3))
     (pin "2" (uuid cf399854-e1d0-4cdb-b6a0-308462990234))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW62") (unit 1)
         )
@@ -11872,7 +11690,7 @@
     (pin "1" (uuid 91ffd050-4e17-4829-9afe-dfdec7041441))
     (pin "2" (uuid 75a688c9-5b19-48d2-96b9-e983d17d712b))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "R11") (unit 1)
         )
@@ -11898,7 +11716,7 @@
     (pin "1" (uuid 9f87247c-0d00-4c7a-ba8a-69afb84e41d9))
     (pin "2" (uuid 7e218f53-b638-48e8-ad60-ef7eb8c0a019))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW11") (unit 1)
         )
@@ -11917,7 +11735,7 @@
     (property "Reference" "R20" (at 189.0919 283.931 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "R_Small" (at 189.23 285.75 90)
+    (property "Value" "27R" (at 189.23 285.75 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 189.23 281.94 0)
@@ -11929,7 +11747,7 @@
     (pin "1" (uuid 8392d972-4692-4257-b8d7-04304a610be9))
     (pin "2" (uuid e46f5938-a442-4d8c-88a2-dde8af2ab851))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "R20") (unit 1)
         )
@@ -11955,7 +11773,7 @@
     (pin "1" (uuid ff8e083b-aeef-4ff9-adbc-74538c3615f8))
     (pin "2" (uuid 6e8281bd-fe54-43f5-a9ca-344dca2d93f3))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW3") (unit 1)
         )
@@ -11989,7 +11807,7 @@
     (pin "1" (uuid dbd9af3f-6b05-4766-be8d-1c04925fdef5))
     (pin "2" (uuid f6459bb3-f92d-4c4b-9e1b-4785b05f87d4))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "C11") (unit 1)
         )
@@ -12015,7 +11833,7 @@
     (pin "1" (uuid 4ce92295-ba80-441f-8f84-eb372c21266e))
     (pin "2" (uuid ba17df1e-ee41-4983-8669-1c44948750b2))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D19") (unit 1)
         )
@@ -12046,7 +11864,7 @@
     (pin "1" (uuid 96a7b8d1-ca5c-4388-8402-6b1b5438d087))
     (pin "2" (uuid d2aa0c59-8a60-43eb-b721-9e6563bea273))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D69") (unit 1)
         )
@@ -12081,7 +11899,7 @@
     (pin "2" (uuid 8a028de9-bdf1-40f6-ba40-edd2ea9b9858))
     (pin "3" (uuid 7a261af4-024e-4956-b57f-fee55641d5c5))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "U3") (unit 1)
         )
@@ -12107,7 +11925,7 @@
     (pin "1" (uuid 2fc89bcd-4afe-4704-96d5-32cd102a875b))
     (pin "2" (uuid bbc5fc23-7385-4bdd-b3b6-4107a2650293))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D54") (unit 1)
         )
@@ -12138,7 +11956,7 @@
     (pin "1" (uuid 412dc711-8eee-44b8-9b30-5a3eb6d8c117))
     (pin "2" (uuid 7c4891a5-6e4c-46be-aa86-7bd0a17bde3a))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW53") (unit 1)
         )
@@ -12168,7 +11986,7 @@
     )
     (pin "1" (uuid c77e08c5-9e7c-4f64-9f73-bbcc7186732b))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "TP11") (unit 1)
         )
@@ -12194,7 +12012,7 @@
     (pin "1" (uuid 1130735f-9f03-447e-96ea-416eb19772d1))
     (pin "2" (uuid 0adbda68-fed7-44fa-af02-2617bb2b2434))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D36") (unit 1)
         )
@@ -12229,7 +12047,7 @@
     (pin "5" (uuid 2a946421-7c34-40f8-bdab-3fa7972f2be2))
     (pin "6" (uuid 43990b46-f504-4cc5-beb2-11670016e27e))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D86") (unit 1)
         )
@@ -12255,7 +12073,7 @@
     (pin "1" (uuid 966275b5-3797-4db5-8567-bbcb4c75b4f7))
     (pin "2" (uuid 47e5fb56-155c-45b9-bc9c-8b4f51f24623))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D43") (unit 1)
         )
@@ -12286,7 +12104,7 @@
     (pin "1" (uuid a5ad7776-bee4-4b6b-9c58-893cf9f93551))
     (pin "2" (uuid c4caebcb-d723-4338-8dcf-a5b77ab146c7))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D55") (unit 1)
         )
@@ -12317,7 +12135,7 @@
     (pin "1" (uuid 692b2fe5-0c40-456d-8fef-9bbdf1e4a46e))
     (pin "2" (uuid 807df6c9-e252-4888-baf1-19c9462f6b46))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW38") (unit 1)
         )
@@ -12348,7 +12166,7 @@
     (pin "1" (uuid 7dd67b4c-ea9a-45da-b73c-09c46481e26c))
     (pin "2" (uuid a92b48b2-6ddc-45f8-a66b-f781f586d8c8))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW34") (unit 1)
         )
@@ -12379,7 +12197,7 @@
     (pin "1" (uuid ce88c8f9-7263-4329-b8b4-af4e6873ebf3))
     (pin "2" (uuid abc427fd-af36-485b-9dcb-1a64c0d87e31))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D6") (unit 1)
         )
@@ -12410,7 +12228,7 @@
     (pin "1" (uuid 809d856c-078c-487c-8665-f539cc460ae9))
     (pin "2" (uuid 6e3120d6-92c5-4af1-bbb9-79159d5a0c7b))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW7") (unit 1)
         )
@@ -12441,7 +12259,7 @@
     (pin "1" (uuid 520b87a3-a8ed-43e2-8dfc-3030cbf1d65d))
     (pin "2" (uuid 85b7ecbd-4075-46ea-b187-32e99225456a))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D21") (unit 1)
         )
@@ -12472,7 +12290,7 @@
     (pin "1" (uuid c40d8160-aaf8-4728-94ac-0497af0d3d30))
     (pin "2" (uuid c7aca381-191b-4115-abdb-882618d36d08))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW67") (unit 1)
         )
@@ -12503,7 +12321,7 @@
     (pin "1" (uuid 744b27d1-1f8b-402f-8fcd-845f3715242f))
     (pin "2" (uuid 7c14398f-c667-4f4b-bcee-882328aed6a6))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW48") (unit 1)
         )
@@ -12536,7 +12354,7 @@
     (pin "3" (uuid 2cfc5527-b7b3-4348-9898-c6c59b19bc5c))
     (pin "4" (uuid 14386a37-1215-4c54-ba3e-d33f7971c0aa))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "J5") (unit 1)
         )
@@ -12565,7 +12383,7 @@
     (pin "1" (uuid 5752efdb-0eb8-4cec-bf62-3f377d675860))
     (pin "2" (uuid 48535845-f22e-47a1-a492-f9717e894130))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "R8") (unit 1)
         )
@@ -12590,7 +12408,7 @@
     )
     (pin "1" (uuid be018f23-3f56-402a-a0a1-945cff12a1f7))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR09") (unit 1)
         )
@@ -12616,7 +12434,7 @@
     (pin "1" (uuid 77a7b6c4-2768-43c9-8af6-48b446c5de25))
     (pin "2" (uuid 1d36351f-4f8f-4175-86ce-a354464b9c8e))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D31") (unit 1)
         )
@@ -12647,7 +12465,7 @@
     (pin "1" (uuid 9c40ab0c-f0d4-44f3-8975-9ba542861244))
     (pin "2" (uuid 06c8253b-2d47-4101-92b3-bef31c94bdd2))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D82") (unit 1)
         )
@@ -12677,7 +12495,7 @@
     )
     (pin "1" (uuid 2d2f50ee-122e-4a95-a457-ba217353cb85))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR031") (unit 1)
         )
@@ -12703,7 +12521,7 @@
     (pin "1" (uuid a210e7ee-bdf6-4a89-813d-03dde4652954))
     (pin "2" (uuid 97d9ba41-4df3-4ebc-8b2b-620385b2072d))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D45") (unit 1)
         )
@@ -12737,7 +12555,7 @@
     (pin "1" (uuid 7974291b-871b-4533-823f-c491cc2e8cca))
     (pin "2" (uuid 4632dc92-35e4-4867-a17f-63ce835e64d3))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "C6") (unit 1)
         )
@@ -12762,7 +12580,7 @@
     )
     (pin "1" (uuid ef3a01d2-77f1-41bc-805c-8f1fe3213650))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR030") (unit 1)
         )
@@ -12788,7 +12606,7 @@
     (pin "1" (uuid d8b39e0b-171c-42e3-bfc9-83bffbadf8ed))
     (pin "2" (uuid 89b4d381-9de8-4b17-8c32-32aaa5b98e0e))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW69") (unit 1)
         )
@@ -12822,7 +12640,7 @@
     (pin "1" (uuid c8650daf-1ffc-41b6-83cb-a7da1826248a))
     (pin "2" (uuid 2d1d74e0-cdee-458b-b3fb-dc68251fd08b))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "C22") (unit 1)
         )
@@ -12848,7 +12666,7 @@
     (pin "1" (uuid 64f4138a-e7c4-4efe-a34c-f24a509801e8))
     (pin "2" (uuid b47e1404-5b29-44a6-b82b-069c232e903f))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW52") (unit 1)
         )
@@ -12879,7 +12697,7 @@
     (pin "1" (uuid d0f76dac-0437-4acf-8599-ccd2bbd69a01))
     (pin "2" (uuid 90277dc8-b72e-49ef-88a8-a3cadae41a58))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW44") (unit 1)
         )
@@ -12910,7 +12728,7 @@
     (pin "1" (uuid fd87da74-7153-4d3f-8422-9087e0eab542))
     (pin "2" (uuid 17c39195-17a4-409f-9592-d1e5b2db487a))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW68") (unit 1)
         )
@@ -12941,7 +12759,7 @@
     (pin "1" (uuid bbdce106-1660-4b5f-b979-7776e617fa6a))
     (pin "2" (uuid 277f7919-7384-41cd-b9a6-7330dcaae2cf))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D79") (unit 1)
         )
@@ -12949,35 +12767,6 @@
       (project "Quanta-ISO-Pico_01"
         (path "/f6fe67b3-df31-4eaa-8c1c-b401dae65157"
           (reference "D1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:FerriteBead") (at 495.3 91.44 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid ae510a1a-47c7-4f63-ad4a-18fb6ce83bb4)
-    (property "Reference" "FB8" (at 491.49 91.44 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "600R" (at 488.95 91.44 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "PCM_Ferrite_SMD_Handsoldering_AKL:Ferrite_0805_2012Metric" (at 497.078 91.44 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 495.3 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "JLCPCB part numb" "C1017" (at 495.3 91.44 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid ffeb8ffe-d7c7-4ad3-a96f-0ba8458401d5))
-    (pin "2" (uuid 1ce19b5b-e367-4c7c-96fc-5e37c2183d49))
-    (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
-        (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
-          (reference "FB8") (unit 1)
         )
       )
     )
@@ -13001,7 +12790,7 @@
     (pin "1" (uuid f8a2c62f-0a98-41cc-aa9d-effdf431c19e))
     (pin "2" (uuid 361f3768-99aa-4c8e-aa32-05573e18f771))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D66") (unit 1)
         )
@@ -13031,7 +12820,7 @@
     )
     (pin "1" (uuid a70d8a41-1ca2-455c-8e8a-c364a0e4efa0))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR01") (unit 1)
         )
@@ -13057,7 +12846,7 @@
     (pin "1" (uuid cf6c4ff1-319b-4c74-a557-7358f8931370))
     (pin "2" (uuid 4b0d1b86-fe7c-4aeb-9980-9c03c35e4927))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D24") (unit 1)
         )
@@ -13088,7 +12877,7 @@
     (pin "1" (uuid 487ac037-5f3d-4c85-9c7f-7f32004cfffc))
     (pin "2" (uuid cdc1a01d-ffcc-45ea-ab98-0e952c3c33e4))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW77") (unit 1)
         )
@@ -13118,7 +12907,7 @@
     )
     (pin "1" (uuid fbdfc324-bb5d-4adc-9a56-aa8b3f78d9d9))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR02") (unit 1)
         )
@@ -13144,7 +12933,7 @@
     (pin "1" (uuid 88b57767-ed91-4828-8ebc-7ff3976526ad))
     (pin "2" (uuid 67111786-4c6f-4739-b1c8-2e4784a5d1f7))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW35") (unit 1)
         )
@@ -13175,7 +12964,7 @@
     (pin "1" (uuid c8b54dd9-c7e8-47e1-bd2b-c0e2c1003005))
     (pin "2" (uuid 2fc7d0aa-a619-4e83-83ed-14e46b2f981d))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW18") (unit 1)
         )
@@ -13206,7 +12995,7 @@
     (pin "1" (uuid c53c37fe-5623-4685-a9b0-90d4122b3b21))
     (pin "2" (uuid 2c5311ce-844b-4d50-995b-74c239f34456))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW22") (unit 1)
         )
@@ -13237,7 +13026,7 @@
     (pin "1" (uuid 71ce6c83-46f4-493f-9fdf-24e38cbec78e))
     (pin "2" (uuid 7979f22e-7efa-481d-b5df-801f437e87dd))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW74") (unit 1)
         )
@@ -13268,7 +13057,7 @@
     (pin "1" (uuid 3b575e99-c9a7-48a2-a2f4-1fa039ce47b3))
     (pin "2" (uuid 414680bc-5bff-4703-adcb-f0ff331699b8))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D16") (unit 1)
         )
@@ -13302,7 +13091,7 @@
     (pin "1" (uuid 0651e471-29fa-4ce5-87aa-1cc07be12c62))
     (pin "2" (uuid 92b41306-39e2-4ac7-b5e1-def594ca9026))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "R7") (unit 1)
         )
@@ -13327,7 +13116,7 @@
     )
     (pin "1" (uuid 386a0661-9ffd-4159-9b02-c28520d5a1c8))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR051") (unit 1)
         )
@@ -13353,7 +13142,7 @@
     (pin "1" (uuid a4c28bbb-eeca-4347-b706-2ff3a1509c95))
     (pin "2" (uuid cf104a2f-bac1-4c9c-b43f-685e12e90622))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW57") (unit 1)
         )
@@ -13361,31 +13150,6 @@
       (project "Quanta-ISO-Pico_01"
         (path "/f6fe67b3-df31-4eaa-8c1c-b401dae65157"
           (reference "SW1-1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 400.05 95.25 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid bfb63e1a-358c-4539-832e-2134935e307f)
-    (property "Reference" "#PWR018" (at 400.05 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 400.05 99.06 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 400.05 95.25 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 400.05 95.25 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 43a001cd-cddd-4d5a-bf34-b5b43cbf3cc3))
-    (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
-        (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
-          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -13409,7 +13173,7 @@
     (pin "1" (uuid 54d578bb-1288-4c81-a6d2-cecd5d28056e))
     (pin "2" (uuid 10e2682d-d568-416c-b5a9-a1ab2b16d41b))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW46") (unit 1)
         )
@@ -13440,7 +13204,7 @@
     (pin "1" (uuid b04da412-1176-4f13-813f-468caf099e6e))
     (pin "2" (uuid d66a3fa3-9cd6-4e8f-a4c6-2a93529d917a))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D72") (unit 1)
         )
@@ -13470,7 +13234,7 @@
     )
     (pin "1" (uuid 4ced84c4-8dff-4da0-973f-013a8fb7aec9))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR033") (unit 1)
         )
@@ -13496,7 +13260,7 @@
     (pin "1" (uuid 5146550a-c5e8-4b3c-88a0-68914d0bc0b2))
     (pin "2" (uuid a5a2b699-9681-4336-82dc-d6466f47009b))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D3") (unit 1)
         )
@@ -13526,7 +13290,7 @@
     )
     (pin "1" (uuid 475fd749-5612-4ff1-8264-d265679672a9))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR050") (unit 1)
         )
@@ -13551,7 +13315,7 @@
     )
     (pin "1" (uuid 6cca0d63-0789-4954-b04d-b0a70d5ad2a7))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR052") (unit 1)
         )
@@ -13577,7 +13341,7 @@
     (pin "1" (uuid 8783b1b2-1db4-45c1-88a2-623d3a0a37bc))
     (pin "2" (uuid f70ab92d-0b3e-4001-97a2-ce25acaf407d))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D12") (unit 1)
         )
@@ -13608,7 +13372,7 @@
     (pin "1" (uuid 75c59651-b31e-4f57-a8f2-b0993bf3f9fd))
     (pin "2" (uuid 512eb9be-1965-4de6-bb76-b09be5f1fd10))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW54") (unit 1)
         )
@@ -13638,7 +13402,7 @@
     )
     (pin "1" (uuid cd01d76e-8541-4efc-8cf0-60e1f2056e67))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR023") (unit 1)
         )
@@ -13663,7 +13427,7 @@
     )
     (pin "1" (uuid c25e5a17-8ed6-4037-a812-56184c519fac))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR055") (unit 1)
         )
@@ -13689,7 +13453,7 @@
     (pin "1" (uuid 02597dcf-92db-4d0b-80b6-eff8fab45bb7))
     (pin "2" (uuid fed1f7eb-e21e-4130-9e96-f43e537e983f))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D30") (unit 1)
         )
@@ -13719,7 +13483,7 @@
     )
     (pin "1" (uuid 87cc3a04-6559-451b-b141-1f52748d4c24))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR05") (unit 1)
         )
@@ -13745,7 +13509,7 @@
     (pin "1" (uuid 888358e9-25c2-46d9-9b5d-6077514f254e))
     (pin "2" (uuid 09ecdcc7-7ed0-4868-b77f-14d62775a76c))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW58") (unit 1)
         )
@@ -13776,7 +13540,7 @@
     (pin "1" (uuid b647ff6d-064e-4c06-b47a-6a8ced03684b))
     (pin "2" (uuid 05d91190-6e77-405a-bded-978fbe530827))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW19") (unit 1)
         )
@@ -13807,7 +13571,7 @@
     (pin "1" (uuid ecdd0c80-23bb-427f-9afa-ef42a543033c))
     (pin "2" (uuid 865d3861-6d8e-4ad6-94e0-cac7060cdf50))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D47") (unit 1)
         )
@@ -13838,7 +13602,7 @@
     (pin "1" (uuid dd88319a-3175-409d-b84b-c8fd64d317d1))
     (pin "2" (uuid e133ccec-9940-41a8-8422-9a6f6b7b57e0))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "RESWD1") (unit 1)
         )
@@ -13868,7 +13632,7 @@
     )
     (pin "1" (uuid acd3740c-9578-4e4f-8c69-b5b18df2a45e))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR034") (unit 1)
         )
@@ -13912,7 +13676,7 @@
     (pin "B9" (uuid 7454a937-bb5d-4ab6-9fbd-4fdfddf65799))
     (pin "S1" (uuid 9f5d9438-b753-4f20-92c0-8db62397b026))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "J7") (unit 1)
         )
@@ -13941,7 +13705,7 @@
     (pin "1" (uuid 44de6d4b-e8e3-4def-bada-eb2d96544200))
     (pin "2" (uuid acf159d0-d77d-4214-b0cf-43e89bae9e30))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "C27") (unit 1)
         )
@@ -13967,7 +13731,7 @@
     (pin "1" (uuid e4dd6461-2faf-4d78-820c-1451a4227d86))
     (pin "2" (uuid 4b6099ce-31cc-4dd6-9e1a-7a19f6716d92))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D62") (unit 1)
         )
@@ -13998,7 +13762,7 @@
     (pin "1" (uuid 7908e0a1-0914-48ef-8cfc-47ad55caff78))
     (pin "2" (uuid aeec2c02-bbcb-4850-843f-55451c3c0e1a))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW40") (unit 1)
         )
@@ -14029,7 +13793,7 @@
     (pin "1" (uuid 364d0c3b-8d4e-4cb1-a593-1480f8156ee9))
     (pin "2" (uuid 24a5f0ba-83ba-44a3-b1b3-a21623f6d870))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D78") (unit 1)
         )
@@ -14060,7 +13824,7 @@
     (pin "1" (uuid 95aed490-1389-4375-be11-3e14e7afac9c))
     (pin "2" (uuid c1db3f74-3f8c-40bc-9cc9-338a5ea305ce))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D76") (unit 1)
         )
@@ -14091,7 +13855,7 @@
     (pin "1" (uuid 354a6c12-7ff2-40b5-83fc-baccd6ff5d81))
     (pin "2" (uuid 407d5476-2a7e-4e04-b766-284af9896c42))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D4") (unit 1)
         )
@@ -14122,7 +13886,7 @@
     (pin "1" (uuid 349ef4f7-e1c8-4324-b328-a1d1dea09e32))
     (pin "2" (uuid 993a356d-de5f-49f4-99ac-8a6c19429e9e))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW27") (unit 1)
         )
@@ -14153,7 +13917,7 @@
     (pin "1" (uuid ea0094eb-a702-4142-9136-217c1c50ec03))
     (pin "2" (uuid b49cb9d1-b51d-4291-9c03-e9380d11f075))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW6") (unit 1)
         )
@@ -14184,7 +13948,7 @@
     (pin "1" (uuid 59ac4955-2c9e-42fa-8cf3-017c49ab1ffc))
     (pin "2" (uuid 3f9b4572-c13c-48f6-8a8a-e1a4af2c946f))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D28") (unit 1)
         )
@@ -14215,7 +13979,7 @@
     (pin "1" (uuid 63c69a96-9f1c-4a19-86c3-ba34ecee7973))
     (pin "2" (uuid 01e9f47e-b8ff-4473-a84d-5980f8fe1ea9))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW37") (unit 1)
         )
@@ -14246,7 +14010,7 @@
     (pin "1" (uuid 492124fe-66e0-4cb5-93e3-809310bbb66b))
     (pin "2" (uuid e96c5ea4-e1da-4755-9ffb-94e98437626f))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW65") (unit 1)
         )
@@ -14277,7 +14041,7 @@
     (pin "1" (uuid e298e7d1-18e5-41b3-a3ab-300eaf0819e8))
     (pin "2" (uuid 0efb9075-124b-4d06-9ad1-c6762b12abcf))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW73") (unit 1)
         )
@@ -14307,7 +14071,7 @@
     )
     (pin "1" (uuid fa4979b7-c08c-4a72-8f29-d4e76473e070))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR053") (unit 1)
         )
@@ -14332,7 +14096,7 @@
     )
     (pin "1" (uuid b4031946-b227-4c09-b69a-313e3c99ec30))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "TP14") (unit 1)
         )
@@ -14358,7 +14122,7 @@
     (pin "1" (uuid 9309bd99-03da-431a-9d5b-82096efee5c3))
     (pin "2" (uuid c131e054-1f73-472d-a1fe-1bb512817582))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D14") (unit 1)
         )
@@ -14389,7 +14153,7 @@
     (pin "1" (uuid 8f84a3c2-3454-4efa-bbe0-2c60583e60bb))
     (pin "2" (uuid 6c505599-d4ce-44e0-a7cb-f6f986f14f6a))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D35") (unit 1)
         )
@@ -14423,7 +14187,7 @@
     (pin "1" (uuid a6a0a7fc-9afc-437e-9ccb-3d85f310e51b))
     (pin "2" (uuid bd5bd549-9f06-445e-8b08-6ee7937e9d8f))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "C20") (unit 1)
         )
@@ -14449,7 +14213,7 @@
     (pin "1" (uuid 031ba3dd-c554-4f44-8b63-758e5f2e2f79))
     (pin "2" (uuid ae06528b-d60a-49a7-a3c5-776a2fb04bac))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW55") (unit 1)
         )
@@ -14480,7 +14244,7 @@
     (pin "1" (uuid 0b0c16d3-1720-4b0c-ae52-e60bf983290c))
     (pin "2" (uuid 49723e3a-ddc2-49e8-be2e-fddae766b885))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW5") (unit 1)
         )
@@ -14514,7 +14278,7 @@
     (pin "1" (uuid 12cd4050-dea0-4e2b-9961-d71b7ffbbdbb))
     (pin "2" (uuid 2532dd58-b8af-4717-8658-bb87b90b66be))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "C12") (unit 1)
         )
@@ -14543,7 +14307,7 @@
     (pin "1" (uuid fa839b6e-5e74-40f0-8018-cc12aa686ba5))
     (pin "2" (uuid 8b59afd3-3b8c-4803-9fd0-b2c8ad8273fa))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "C2") (unit 1)
         )
@@ -14569,7 +14333,7 @@
     (pin "1" (uuid 0a544899-4324-4a09-97ca-68e6d07b6fb5))
     (pin "2" (uuid 4b8acf90-6626-427c-aece-beb2d0c5a922))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW36") (unit 1)
         )
@@ -14600,7 +14364,7 @@
     (pin "1" (uuid 4d9217c5-eb47-4039-bf8b-500a94163fcd))
     (pin "2" (uuid cc2b524f-b0ac-449f-9879-79f8aa08bdb0))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D7") (unit 1)
         )
@@ -14630,7 +14394,7 @@
     )
     (pin "1" (uuid 349463f5-75e0-483a-84a1-0a768a4502e3))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR038") (unit 1)
         )
@@ -14659,7 +14423,7 @@
     (pin "1" (uuid d736ead3-9248-446f-aea6-08a94fbdd8ad))
     (pin "2" (uuid 2bd21bb7-963c-43a6-99fa-9197f41b92bb))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SWRESET") (unit 1)
         )
@@ -14684,7 +14448,7 @@
     )
     (pin "1" (uuid 59f94ec6-ee59-4c1b-88d4-9ee51a416991))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR046") (unit 1)
         )
@@ -14713,7 +14477,7 @@
     (pin "1" (uuid 9c2e1ebe-e0f6-4bfd-96fd-9f34d0f57c2f))
     (pin "2" (uuid 3cb633b1-ee96-470d-bbff-99748e370422))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "C13") (unit 1)
         )
@@ -14739,7 +14503,7 @@
     (pin "1" (uuid a86884f6-d2d5-418e-9f7c-f46df68adfd2))
     (pin "2" (uuid 4a73693f-c885-46ac-855f-286df35a29eb))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW2") (unit 1)
         )
@@ -14770,7 +14534,7 @@
     (pin "1" (uuid 80fe01b3-ae6f-4b05-bf43-a90b3f2b38a4))
     (pin "2" (uuid 26051c72-8824-4ba3-a604-cb395b244ca7))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW39") (unit 1)
         )
@@ -14801,7 +14565,7 @@
     (pin "1" (uuid e6a6fcac-e7b8-4a42-8b14-3f747de1ecbf))
     (pin "2" (uuid 98ea8123-e3c3-4fd7-8650-9040c7ffcbe8))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW10") (unit 1)
         )
@@ -14832,7 +14596,7 @@
     (pin "1" (uuid b729baf5-527d-4506-850e-a82acc00bb9f))
     (pin "2" (uuid ba75f2a9-e3da-4ff9-bed4-30a3b1e93584))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW4") (unit 1)
         )
@@ -14863,7 +14627,7 @@
     (pin "1" (uuid c878b8af-a8ec-4f01-9ce9-2eccbe75bd62))
     (pin "2" (uuid 28a5341c-f691-4f56-be5a-93b0cefc3501))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D34") (unit 1)
         )
@@ -14882,7 +14646,7 @@
     (property "Reference" "R19" (at 189.3508 275.3093 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "R_Small" (at 189.1136 277.3918 90)
+    (property "Value" "27R" (at 189.1136 277.3918 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 189.23 279.4 0)
@@ -14894,7 +14658,7 @@
     (pin "1" (uuid 6e266f56-ed63-495e-a396-161dc235b04a))
     (pin "2" (uuid d0bc3e62-3553-47a6-b213-781db1f5b5fe))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "R19") (unit 1)
         )
@@ -14923,7 +14687,7 @@
     (pin "1" (uuid 38fba639-a46e-4446-9361-2b708d28ea09))
     (pin "2" (uuid 01505e86-da0d-4a45-ba86-882df3ddfef1))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "C3") (unit 1)
         )
@@ -14949,7 +14713,7 @@
     (pin "1" (uuid 2b90d9f1-342f-4480-99d8-b19c821eb65f))
     (pin "2" (uuid 8bae68a9-6a09-4433-b133-c3647d33fb61))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW29") (unit 1)
         )
@@ -14979,7 +14743,7 @@
     )
     (pin "1" (uuid 36675f87-db78-4610-bd46-2742cf093805))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR029") (unit 1)
         )
@@ -15005,7 +14769,7 @@
     (pin "1" (uuid e2f97bfc-bf3d-464c-b259-884ec339bcdd))
     (pin "2" (uuid ec54a712-6a5e-43af-b896-a2265d2fc0a5))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D75") (unit 1)
         )
@@ -15036,7 +14800,7 @@
     (pin "1" (uuid 138de777-e235-4419-92cf-4faddd549427))
     (pin "2" (uuid 8ba7cf99-1c90-4e84-9cc8-955370cdafcd))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D57") (unit 1)
         )
@@ -15067,7 +14831,7 @@
     (pin "1" (uuid 35fe60e2-96f3-49b9-894b-c277bb3d1eed))
     (pin "2" (uuid c317cc7b-0d70-404c-9c6b-1d8fef5b0cee))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D17") (unit 1)
         )
@@ -15101,7 +14865,7 @@
     (pin "1" (uuid b222a6b2-ccde-4580-b0fa-c7d496ad69b8))
     (pin "2" (uuid e3be448b-a9f5-4277-a6b7-a940fcf63d59))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "R15") (unit 1)
         )
@@ -15127,7 +14891,7 @@
     (pin "1" (uuid 1e8133c1-20b6-4dea-bf45-63b6b1daaab0))
     (pin "2" (uuid 532817a7-c212-4a79-8921-9acc1c8fbe69))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D22") (unit 1)
         )
@@ -15158,7 +14922,7 @@
     (pin "1" (uuid d292a7cc-d3b4-4be8-94e7-832756f81572))
     (pin "2" (uuid a572b8a7-ddde-4bd7-84a3-b3baa51b308e))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D5") (unit 1)
         )
@@ -15189,7 +14953,7 @@
     (pin "1" (uuid eae1e2af-53ab-4c74-ac2e-26a5b86be5f6))
     (pin "2" (uuid fa7c61af-965d-4476-b13a-79c0b9ac4150))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D67") (unit 1)
         )
@@ -15219,7 +14983,7 @@
     )
     (pin "1" (uuid 9994c7c2-b0fc-4fe8-894b-9f2e21c53a58))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "TP2") (unit 1)
         )
@@ -15244,7 +15008,7 @@
     )
     (pin "1" (uuid e64f4b04-7dbc-4a6c-ae21-e223dfe51af9))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR019") (unit 1)
         )
@@ -15276,7 +15040,7 @@
     (pin "4" (uuid 65cd3d24-cc0d-469a-87ac-2f6c81b680aa))
     (pin "5" (uuid a6b1760b-9e4e-4a75-b0ed-19a9c76aeb2c))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "J6") (unit 1)
         )
@@ -15320,7 +15084,7 @@
     (pin "B9" (uuid ad37747e-4978-4859-ac78-8f2b6ba27ef6))
     (pin "S1" (uuid 8b43cc6d-8035-4241-abf1-29437ba7727b))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "J9") (unit 1)
         )
@@ -15349,7 +15113,7 @@
     (pin "1" (uuid decec422-65fe-42fc-93d0-17767f252512))
     (pin "2" (uuid f11f8377-8c59-4002-8457-ceb1e567532d))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D1") (unit 1)
         )
@@ -15380,7 +15144,7 @@
     (pin "1" (uuid 00105ca1-6cc6-49d9-ab5e-735cbb3ec6d7))
     (pin "2" (uuid 171f898b-e6ee-4a2b-9870-656be42e41b7))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D53") (unit 1)
         )
@@ -15411,7 +15175,7 @@
     (pin "1" (uuid d4edae49-17c6-424d-964d-78ab3d8398a1))
     (pin "2" (uuid 13288876-768f-4f24-90d1-c825458d5f4d))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D37") (unit 1)
         )
@@ -15442,7 +15206,7 @@
     (pin "1" (uuid ea872c83-9521-496e-af98-38f4fb771827))
     (pin "2" (uuid 376af616-5deb-4a67-9a6d-e18a485a9c47))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D70") (unit 1)
         )
@@ -15472,7 +15236,7 @@
     )
     (pin "1" (uuid a6ce1224-8c19-4ce1-bda8-42a79311ddba))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "#PWR013") (unit 1)
         )
@@ -15501,7 +15265,7 @@
     (pin "1" (uuid d7d846c2-3841-4e55-8e57-6e8f80c1f6a7))
     (pin "2" (uuid 545c3806-c6e3-402b-8e36-30fc01793d9b))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "R14") (unit 1)
         )
@@ -15527,7 +15291,7 @@
     (pin "1" (uuid 32d4fcbb-733c-43a6-9755-8c2432228bbc))
     (pin "2" (uuid 628145b6-9fb7-4bc4-9abe-c32704901e04))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D60") (unit 1)
         )
@@ -15535,35 +15299,6 @@
       (project "Quanta-ISO-Pico_01"
         (path "/f6fe67b3-df31-4eaa-8c1c-b401dae65157"
           (reference "D1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:FerriteBead") (at 400.05 91.44 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid fb98a1ca-c47a-4a07-9a33-3e75a98d373d)
-    (property "Reference" "FB3" (at 396.24 91.44 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "600R" (at 393.7 91.44 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "PCM_Ferrite_SMD_Handsoldering_AKL:Ferrite_0805_2012Metric" (at 401.828 91.44 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 400.05 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "JLCPCB part numb" "C1017" (at 400.05 91.44 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid efcaf16e-deb1-43da-8ad6-8b49eaf63527))
-    (pin "2" (uuid 68417f7b-3ec2-42a0-9508-adbf79d97d91))
-    (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
-        (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
-          (reference "FB3") (unit 1)
         )
       )
     )
@@ -15587,7 +15322,7 @@
     (pin "1" (uuid ffc5f312-77d4-4ee1-bd7a-b1a67f9c594a))
     (pin "2" (uuid 4ab0283d-838c-4bc9-97a8-58d732998c95))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "D40") (unit 1)
         )
@@ -15617,7 +15352,7 @@
     )
     (pin "1" (uuid 169d7464-8725-4e28-b0c2-71146984931b))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "TP6") (unit 1)
         )
@@ -15643,7 +15378,7 @@
     (pin "1" (uuid 81bd48f2-a7fa-4b1f-9c93-3bb27b746ea8))
     (pin "2" (uuid ba8c3844-32f0-4973-83cc-5380c9950986))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "SW9") (unit 1)
         )
@@ -15677,7 +15412,7 @@
     (pin "1" (uuid 2bd320c3-7d8f-464f-925b-f99aad228e7a))
     (pin "2" (uuid c6de729a-eed3-4c72-9f64-35cb87a585e7))
     (instances
-      (project "Quanta_BareRP2040_JLCPCBAoptimized"
+      (project "Quanta75_BareRP2040_JLCPCBAoptimized"
         (path "/0cabb2e6-4a46-4ffe-8ff7-d51fc1f6dda5"
           (reference "R17") (unit 1)
         )
