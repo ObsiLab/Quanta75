@@ -13,8 +13,8 @@ excerpt: >
 feature_row:
   - image_path: /assets/images/keyboard_photo.jpg
     alt: "keyboard photo"
-    title: "The Quanta"
-    excerpt: "The Quanta is a 75%, hotswap, ISO layout, mechanical keyboard."
+    title: "The Quanta75"
+    excerpt: "The Quanta75 is a 75%, hotswap, ISO layout, mechanical keyboard."
     url: "/keyboard/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
