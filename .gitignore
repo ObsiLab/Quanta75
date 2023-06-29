@@ -1,2 +1,8 @@
 /other-local-files/**
 !/other-local-files/README.md
+
+# Kicad backups
+/Quanta75_BareRP2040_JLCPCBAoptimized/Quanta75_BareRP2040_JLCPCBAoptimized-backups/**
+/Quanta75_Pico/Quanta75_Pico-backups/**
+/Quanta75_RP2040Stamp/Quanta75_RP2040Stamp-backups/**
+/Quanta75_RP2040Stamp_JLCPCBAoptimized/Quanta75_RP2040Stamp_JLCPCBAoptimized-backups/**
