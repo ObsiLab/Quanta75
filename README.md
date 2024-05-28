@@ -6,10 +6,10 @@ Playing around trying to design a custom keyboard
 #### Project advancement : [Quanta75's Github Project](https://github.com/orgs/ObsiLab/projects/2)  
 
 ## Documentation
-Documentation about Quanta can be found on [the Quanta website: quanta.obsilab.com](https://quanta.obsilab.com).
+Documentation about Quanta75 can be found on [the Quanta website: quanta.obsilab.com](https://quanta.obsilab.com).
 
 ## PCB
-Quanta exists in multiple versions:
+Quanta75 exists in multiple versions:
 - RP2040 Stamp microcontroller board by Solder Party
   - General components
   - JLCPCB assembly service optimized BOM
