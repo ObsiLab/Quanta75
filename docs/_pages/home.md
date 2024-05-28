@@ -29,7 +29,7 @@ feature_row:
     alt: "PCB"
     title: "Open Hardware"
     excerpt: "Fully open-source hardware (CERN-OHL-P v2). Access the KiCad Project PCB files."
-    url: "/hardware/"
+    url: "/docs/pcb/" # "/hardware/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
 intro:
